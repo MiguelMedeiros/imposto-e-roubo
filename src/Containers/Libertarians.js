@@ -211,6 +211,103 @@ class Libertarians extends Component {
             <div className="description">Filosifia, Economia, Política</div>
           </a>
         </Grid>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+          <a
+            href="https://www.youtube.com/channel/UCSyG9ph5BJSmPRyzc_eGC4g"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="navlink"
+          >
+            <Avatar
+              alt="Remy Sharp"
+              src="/img/ancapsu.jpg"
+              className="avatar-image"
+            />
+            <div className="name">Ancap.SU</div>
+            <div className="description">Filosifia, Economia, Notícias</div>
+          </a>
+        </Grid>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+          <a
+            href="https://www.youtube.com/channel/UCsFgHFNWP-1I9mCoA59TixA"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="navlink"
+          >
+            <Avatar
+              alt="Remy Sharp"
+              src="/img/midiaancap.jpg"
+              className="avatar-image"
+            />
+            <div className="name">Mídia Ancap</div>
+            <div className="description">Filosifia, Economia, Política</div>
+          </a>
+        </Grid>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+          <a
+            href="https://www.youtube.com/channel/UChk-Os-kdbd7ZNcANBNSQNQ"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="navlink"
+          >
+            <Avatar
+              alt="Remy Sharp"
+              src="/img/canaltrouxa.jpg"
+              className="avatar-image"
+            />
+            <div className="name">Canal do Trouxa</div>
+            <div className="description">Filosifia</div>
+          </a>
+        </Grid>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+          <a
+            href="https://www.youtube.com/channel/UC549xKR8JvVXLNHvzV_AZsw"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="navlink"
+          >
+            <Avatar
+              alt="Remy Sharp"
+              src="/img/avelino.jpg"
+              className="avatar-image"
+            />
+            <div className="name">Avelino Morganti</div>
+            <div className="description">Criptomoedas</div>
+          </a>
+        </Grid>
+
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+          <a
+            href="https://www.youtube.com/channel/UC4H35F5f2c5cyR-pbZlt12Q"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="navlink"
+          >
+            <Avatar
+              alt="Remy Sharp"
+              src="/img/tiagosalem.jpg"
+              className="avatar-image"
+            />
+            <div className="name">Tiago Salem</div>
+            <div className="description">Criptomoedas</div>
+          </a>
+        </Grid>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+          <a
+            href="https://www.youtube.com/channel/UCCcyy2UQLeNQw0aDcwFE2ng"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="navlink"
+          >
+            <Avatar
+              alt="Remy Sharp"
+              src="/img/randall.jpg"
+              className="avatar-image"
+            />
+            <div className="name">FH Randall</div>
+            <div className="description">Filosifia, Economia, Política</div>
+          </a>
+        </Grid>
       </Grid>
     );
   }
