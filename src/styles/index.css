@@ -105,11 +105,11 @@ ul {
   margin: 2rem auto; }
 
 .avatars .avatar-container .navlink {
-  color: #fff;
-  transition: ease-in 100ms all; }
+  transition: ease-in 100ms all;
+  color: #fff; }
 
-.avatars .avatar-container .navlink:hover, .avatars .avatar-container .navlink:focus {
-  transform: scale(1.05); }
+.avatars .avatar-container .navlink:hover .avatar-image, .avatars .avatar-container .navlink:focus .avatar-image {
+  transform: scale(1.04); }
 
 .avatars .avatar-image {
   width: 200px !important;
@@ -124,7 +124,7 @@ ul {
   font-size: 0.7rem; }
 
 .content {
-  max-width: 800px;
+  max-width: 1200px;
   padding: 2rem;
   margin: auto; }
 
@@ -132,7 +132,7 @@ ul {
   text-align: center; }
 
 .content-small {
-  max-width: 550px; }
+  max-width: 600px; }
 
 .fa-icon {
   width: 30px !important;

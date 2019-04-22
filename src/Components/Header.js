@@ -94,7 +94,7 @@ class Header extends Component {
               </MenuItem>
               <MenuItem onClick={this.handleClose}>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/MiguelMedeiros/imposto-e-roubo"
                   rel="noopener noreferrer"
                   target="_blank"
                   className="navlink"

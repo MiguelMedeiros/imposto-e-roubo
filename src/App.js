@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./Helpers/history";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import ReactGA from "react-ga";
 
 import Home from "./Containers/Home";
 import Libertarians from "./Containers/Libertarians";
@@ -22,14 +23,8 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    // ReactGA.initialize("UA-59725926-1");
-    // ReactGA.pageview(window.location.pathname + window.location.search);
-    // const options = {
-    //   autoConfig: true, // set pixel's autoConfig
-    //   debug: false, // enable logs
-    // };
-    // ReactPixel.init("1842096992562323", null, options);
-    // ReactPixel.pageView();
+    ReactGA.initialize("UA-138744306-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
   handleMenu = event => {

@@ -18,7 +18,7 @@ class Libertarians extends Component {
             alguns canais pra você começar:
           </p>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/user/ideiasradicais"
             rel="noopener noreferrer"
@@ -27,14 +27,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/ideiasradicais.jpg"
               className="avatar-image"
             />
             <div className="name">Ideias Radicais</div>
             <div className="description">Filosoifia, Política, Economia</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/user/miguelmedeiros"
             rel="noopener noreferrer"
@@ -50,7 +50,7 @@ class Libertarians extends Component {
             <div className="description">Criptomoedas</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UCHiPlljsU3rFJvNegG6BEPw"
             rel="noopener noreferrer"
@@ -59,14 +59,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/sokath.jpg"
               className="avatar-image"
             />
             <div className="name">Sokath</div>
             <div className="description">Filosofia</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/user/CanalTal"
             rel="noopener noreferrer"
@@ -75,14 +75,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/porto.jpg"
               className="avatar-image"
             />
             <div className="name">Alexandre Porto</div>
             <div className="description">Filosofia</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UCcgAa7wJ1OwRzd-TGFwIxPA"
             rel="noopener noreferrer"
@@ -91,14 +91,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/fhoer.jpg"
               className="avatar-image"
             />
             <div className="name">Fhoer</div>
             <div className="description">Filosofia</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/user/paulokogos"
             rel="noopener noreferrer"
@@ -107,14 +107,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/kogos.jpg"
               className="avatar-image"
             />
             <div className="name">Paulo Kogos</div>
             <div className="description">Filosofia, Economia, Política</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UC98rzzueHX1251cyGEbmqtg"
             rel="noopener noreferrer"
@@ -123,30 +123,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
-              className="avatar-image"
-            />
-            <div className="name">Etoempire</div>
-            <div className="description">Audiobooks Anarcocapitalista</div>
-          </a>
-        </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
-          <a
-            href="https://www.youtube.com/channel/UC98rzzueHX1251cyGEbmqtg"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="navlink"
-          >
-            <Avatar
-              alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/etoempire.jpg"
               className="avatar-image"
             />
             <div className="name">Etoempire</div>
             <div className="description">Filosofia, Economia, Política</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UCQZxQh19-PsMWDRChKh1QGw"
             rel="noopener noreferrer"
@@ -155,14 +139,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/zanfa.jpg"
               className="avatar-image"
             />
             <div className="name">Zanfa</div>
             <div className="description">Filosofia, Economia, Política</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UCOq_USHG_AogX4dwqBYlvhQ"
             rel="noopener noreferrer"
@@ -171,14 +155,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/sotospeak.jpg"
               className="avatar-image"
             />
             <div className="name">So to Speak</div>
             <div className="description">Filosofia, Economia</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UC6cALLZLWQGilBFBB0PWAog"
             rel="noopener noreferrer"
@@ -187,15 +171,15 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/maiconkuster.jpg"
               className="avatar-image"
             />
-            <div className="name">So to Speak</div>
+            <div className="name">Maicon Küster</div>
             <div className="description">Humor, Música</div>
           </a>
         </Grid>
 
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UCLGdIYRBOHcbgRfqk9Lw7xg"
             rel="noopener noreferrer"
@@ -204,14 +188,14 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/john.jpg"
               className="avatar-image"
             />
             <div className="name">Jhon Swanson</div>
             <div className="description">Filosifia, Economia, Política</div>
           </a>
         </Grid>
-        <Grid item className="avatar-container" xs={12} sm={6} md={4}>
+        <Grid item className="avatar-container" xs={12} sm={6} md={3}>
           <a
             href="https://www.youtube.com/channel/UC4z5OsOcltedh3iZKYJ2UcA"
             rel="noopener noreferrer"
@@ -220,7 +204,7 @@ class Libertarians extends Component {
           >
             <Avatar
               alt="Remy Sharp"
-              src="/img/avatar.png"
+              src="/img/pessimista.jpg"
               className="avatar-image"
             />
             <div className="name">O Pessimista</div>

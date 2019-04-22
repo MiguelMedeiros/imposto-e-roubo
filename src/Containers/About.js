@@ -21,11 +21,13 @@ class Donation extends Component {
             </p>
             <br />
             <p>A ideia veio a partir de um diagrama que achei na internet:</p>
-            <img
-              src="/img/diagrama.png"
-              alt="Fiagrama - Imposto é roubo?"
-              className="image"
-            />
+            <div className="align-center">
+              <img
+                src="/img/diagrama.png"
+                alt="Fiagrama - Imposto é roubo?"
+                className="image"
+              />
+            </div>
             <p>
               A partir daí foi só arregaçar as mangas e colocar a ideia em
               prática!

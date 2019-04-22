@@ -129,11 +129,13 @@ ul {
     text-align: center !important;
     margin: 2rem auto;
     .navlink {
-      color: #fff;
       transition: ease-in 100ms all;
+      color: #fff;
       &:hover,
       &:focus {
-        transform: scale(1.05);
+        .avatar-image {
+          transform: scale(1.04);
+        }
       }
     }
   }
@@ -152,7 +154,7 @@ ul {
 }
 
 .content {
-  max-width: 800px;
+  max-width: 1200px;
   padding: 2rem;
   margin: auto;
 }
@@ -161,7 +163,7 @@ ul {
 }
 
 .content-small {
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .fa-icon {
