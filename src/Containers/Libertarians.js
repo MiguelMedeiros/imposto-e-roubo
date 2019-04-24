@@ -159,7 +159,7 @@ class Libertarians extends Component {
                 src="/img/danielfraga.jpg"
                 className="avatar-image"
               />
-              <div className="name">Ideias Radicais</div>
+              <div className="name">Daniel Fraga</div>
               <div className="description">
                 Filosofia, Política, Economia, Criptomoedas
               </div>
