@@ -198,10 +198,6 @@ class Home extends Component {
                 >
                   <FacebookIcon size={32} round />
                 </FacebookShareButton>
-
-                {/* <FacebookShareCount url={shareUrl} className="social-count">
-                  {count => count}
-                </FacebookShareCount> */}
               </div>
 
               <div className="social">
@@ -212,8 +208,6 @@ class Home extends Component {
                 >
                   <TwitterIcon size={32} round />
                 </TwitterShareButton>
-
-                {/* <div className="social-count">&nbsp;</div> */}
               </div>
               <div className="social">
                 <RedditShareButton
@@ -225,8 +219,6 @@ class Home extends Component {
                 >
                   <RedditIcon size={32} round />
                 </RedditShareButton>
-
-                {/* <RedditShareCount url={shareUrl} className="social-count" /> */}
               </div>
               <div className="social">
                 <TelegramShareButton
@@ -236,8 +228,6 @@ class Home extends Component {
                 >
                   <TelegramIcon size={32} round />
                 </TelegramShareButton>
-
-                <div className="social-count">&nbsp;</div>
               </div>
 
               <div className="social">
@@ -249,8 +239,6 @@ class Home extends Component {
                 >
                   <WhatsappIcon size={32} round />
                 </WhatsappShareButton>
-
-                <div className="social-count">&nbsp;</div>
               </div>
             </div>
             <div className="buttons">

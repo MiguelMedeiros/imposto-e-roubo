@@ -15,6 +15,7 @@ class Libertarians extends Component {
     checkedMusica: false,
     checkedTecnologia: false,
     checkedEntrevistas: false,
+    checkedPodcast: false,
   };
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked });
@@ -30,6 +31,7 @@ class Libertarians extends Component {
       checkedMusica,
       checkedTecnologia,
       checkedEntrevistas,
+      checkedPodcast,
     } = this.state;
     let checkedAll = true;
     if (
@@ -41,7 +43,8 @@ class Libertarians extends Component {
       checkedNoticias ||
       checkedPolitica ||
       checkedTecnologia ||
-      checkedEntrevistas
+      checkedEntrevistas ||
+      checkedPodcast
     ) {
       checkedAll = false;
     }
@@ -168,6 +171,18 @@ class Libertarians extends Component {
                 }
                 label="Entrevistas"
               />
+              <FormControlLabel
+                className="filter-option"
+                control={
+                  <Switch
+                    checked={this.state.checkedPodcast}
+                    onChange={this.handleChange("checkedPodcast")}
+                    value="checkedPodcast"
+                    color="primary"
+                  />
+                }
+                label="Podcast"
+              />
             </FormGroup>
           </div>
         </Grid>
@@ -254,6 +269,27 @@ class Libertarians extends Component {
               />
               <div className="name">Sokath</div>
               <div className="description">Filosofia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedFilosofia ||
+          checkedEntrevistas ||
+          checkedPodcast ||
+          checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCIU6wWUaWx2ilIiAjeIc6FA"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/culturalibertaria.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Cultura Libertária</div>
+              <div className="description">Filosofia, Entrevista, Podcast</div>
             </a>
           </Grid>
         )}
@@ -832,7 +868,7 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-        {(checkedHumor || checkedAll) && (
+        {(checkedHumor || checkedPodcast || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
               href="https://www.youtube.com/channel/UC5pmhNvMyjuGpbJmqQbRC0g"
@@ -846,7 +882,7 @@ class Libertarians extends Component {
                 className="avatar-image"
               />
               <div className="name">Arthur Petry</div>
-              <div className="description">Humor</div>
+              <div className="description">Humor, Podcast</div>
             </a>
           </Grid>
         )}
