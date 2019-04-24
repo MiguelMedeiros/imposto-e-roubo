@@ -167,6 +167,25 @@ class Libertarians extends Component {
           </Grid>
         )}
 
+        {(checkedEconomia || checkedCriptomoedas || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/user/miguelmedeiros"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/miguelmedeiros.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Miguel Medeiros</div>
+              <div className="description">Criptomoedas, Economia</div>
+            </a>
+          </Grid>
+        )}
+
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -185,25 +204,6 @@ class Libertarians extends Component {
               />
               <div className="name">Ideias Radicais</div>
               <div className="description">Filosofia, Política, Economia</div>
-            </a>
-          </Grid>
-        )}
-
-        {(checkedCriptomoedas || checkedAll) && (
-          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
-            <a
-              href="https://www.youtube.com/user/miguelmedeiros"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="navlink"
-            >
-              <Avatar
-                alt="Libertário"
-                src="/img/miguelmedeiros.jpg"
-                className="avatar-image"
-              />
-              <div className="name">Miguel Medeiros</div>
-              <div className="description">Criptomoedas</div>
             </a>
           </Grid>
         )}
@@ -475,26 +475,24 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
-        {(checkedCriptomoedas || checkedAll) && (
+        {(checkedEconomia || checkedCriptomoedas || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
-              href="https://www.youtube.com/channel/UC549xKR8JvVXLNHvzV_AZsw"
+              href="https://www.youtube.com/channel/UCLJkh3QjHsLtK0LZFd28oGg"
               rel="noopener noreferrer"
               target="_blank"
               className="navlink"
             >
               <Avatar
                 alt="Libertário"
-                src="/img/avelino.jpg"
+                src="/img/fernandoulrich.jpg"
                 className="avatar-image"
               />
-              <div className="name">Avelino Morganti</div>
-              <div className="description">Criptomoedas</div>
+              <div className="name">Fernando Ulrich</div>
+              <div className="description">Economia, Criptomoedas</div>
             </a>
           </Grid>
         )}
-
         {(checkedCriptomoedas || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -509,6 +507,42 @@ class Libertarians extends Component {
                 className="avatar-image"
               />
               <div className="name">Tiago Salem</div>
+              <div className="description">Criptomoedas</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedEconomia || checkedCriptomoedas || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCEkg0hhWS_oxD24f_6C9Qbw"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/criptomaniacos.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Criptomaniacos</div>
+              <div className="description">Economia, Criptomoedas</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedCriptomoedas || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UC549xKR8JvVXLNHvzV_AZsw"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/avelino.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Avelino Morganti</div>
               <div className="description">Criptomoedas</div>
             </a>
           </Grid>
@@ -533,21 +567,39 @@ class Libertarians extends Component {
           </Grid>
         )}
 
-        {(checkedEconomia || checkedCriptomoedas || checkedAll) && (
+        {(checkedPolitica || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
-              href="https://www.youtube.com/channel/UCLJkh3QjHsLtK0LZFd28oGg"
+              href="https://www.youtube.com/channel/UCk10-mQOSKMB4bndYHTRyoA"
               rel="noopener noreferrer"
               target="_blank"
               className="navlink"
             >
               <Avatar
                 alt="Libertário"
-                src="/img/fernandoulrich.jpg"
+                src="/img/kami.jpg"
                 className="avatar-image"
               />
-              <div className="name">Fernando Ulrich</div>
-              <div className="description">Economia, Criptomoedas</div>
+              <div className="name">Kami Petelin</div>
+              <div className="description">Política</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedPolitica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCn1QV3v-wxL9Or6KhjqFqhQ"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/ancapzone.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Ancap Zone</div>
+              <div className="description">Política</div>
             </a>
           </Grid>
         )}
