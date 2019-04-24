@@ -14,6 +14,7 @@ class Libertarians extends Component {
     checkedNoticias: false,
     checkedHumor: false,
     checkedMusica: false,
+    checkedTecnologia: false,
   };
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked });
@@ -27,6 +28,7 @@ class Libertarians extends Component {
       checkedNoticias,
       checkedHumor,
       checkedMusica,
+      checkedTecnologia,
     } = this.state;
     let checkedAll = true;
     if (
@@ -36,7 +38,8 @@ class Libertarians extends Component {
       checkedHumor ||
       checkedMusica ||
       checkedNoticias ||
-      checkedPolitica
+      checkedPolitica ||
+      checkedTecnologia
     ) {
       checkedAll = false;
     }
@@ -78,6 +81,18 @@ class Libertarians extends Component {
                   />
                 }
                 label="Criptomoedas"
+              />
+              <FormControlLabel
+                className="filter-option"
+                control={
+                  <Switch
+                    checked={this.state.checkedTecnologia}
+                    onChange={this.handleChange("checkedTecnologia")}
+                    value="checkedTecnologia"
+                    color="primary"
+                  />
+                }
+                label="Tecnologia"
               />
               <FormControlLabel
                 className="filter-option"
@@ -167,7 +182,10 @@ class Libertarians extends Component {
           </Grid>
         )}
 
-        {(checkedEconomia || checkedCriptomoedas || checkedAll) && (
+        {(checkedEconomia ||
+          checkedCriptomoedas ||
+          checkedTecnologia ||
+          checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
               href="https://www.youtube.com/user/miguelmedeiros"
@@ -181,7 +199,9 @@ class Libertarians extends Component {
                 className="avatar-image"
               />
               <div className="name">Miguel Medeiros</div>
-              <div className="description">Criptomoedas, Economia</div>
+              <div className="description">
+                Criptomoedas, Tecnologia, Economia
+              </div>
             </a>
           </Grid>
         )}
@@ -493,7 +513,7 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-        {(checkedCriptomoedas || checkedAll) && (
+        {(checkedCriptomoedas || checkedTecnologia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
               href="https://www.youtube.com/channel/UC4H35F5f2c5cyR-pbZlt12Q"
@@ -507,7 +527,7 @@ class Libertarians extends Component {
                 className="avatar-image"
               />
               <div className="name">Tiago Salem</div>
-              <div className="description">Criptomoedas</div>
+              <div className="description">Criptomoedas, Tecnologia</div>
             </a>
           </Grid>
         )}
@@ -618,6 +638,120 @@ class Libertarians extends Component {
               />
               <div className="name">Jay Hokka</div>
               <div className="description">Música</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedCriptomoedas || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCEoSANmneNddweVvUghnfpQ"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/bitconheiros.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Bitconheiros</div>
+              <div className="description">Criptomoedas</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedFilosofia || checkedPolitica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCEoSANmneNddweVvUghnfpQ"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/choppacast.jpg"
+                className="avatar-image"
+              />
+              <div className="name">ChoppaCast</div>
+              <div className="description">Filosofia, Política</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedTecnologia || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UC0x7nBPaRrBOc4HCzYXVkwg"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/victoria.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Victória Hikari</div>
+              <div className="description">Tecnologia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedFilosofia ||
+          checkedPolitica ||
+          checkedEconomia ||
+          checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCtvt8kfIvCH7yT0b5MFTVNA"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/recapitulacao.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Recapitulação Ancap</div>
+              <div className="description">Filosofia, Política, Economia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedPolitica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UC6gmlmhRiJxnwdgRd4zoF3A"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/brunna.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Brunna Silva</div>
+              <div className="description">Política</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedFilosofia ||
+          checkedEconomia ||
+          checkedPolitica ||
+          checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCYyu1QvD3Y7pvtnNLxCB7Gw"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/lobo.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Lobo Conservador</div>
+              <div className="description">Filosofia, Economia, Política</div>
             </a>
           </Grid>
         )}
