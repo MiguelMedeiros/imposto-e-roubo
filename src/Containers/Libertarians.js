@@ -603,6 +603,24 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
+        {(checkedMusica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCs9mlEEIkVfJvORmb7G5Yiw"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/jayhokka.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Jay Hokka</div>
+              <div className="description">Música</div>
+            </a>
+          </Grid>
+        )}
       </Grid>
     );
   }
