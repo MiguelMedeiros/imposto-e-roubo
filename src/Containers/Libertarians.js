@@ -656,7 +656,10 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-        {(checkedFilosofia || checkedPolitica || checkedAll) && (
+        {(checkedFilosofia ||
+          checkedPolitica ||
+          checkedEntrevistas ||
+          checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
               href="https://www.youtube.com/channel/UCEoSANmneNddweVvUghnfpQ"
@@ -670,7 +673,9 @@ class Libertarians extends Component {
                 className="avatar-image"
               />
               <div className="name">ChoppaCast</div>
-              <div className="description">Filosofia, Política</div>
+              <div className="description">
+                Filosofia, Política, Entrevistas
+              </div>
             </a>
           </Grid>
         )}
@@ -950,6 +955,120 @@ class Libertarians extends Component {
               />
               <div className="name">Projeto Anarcoze</div>
               <div className="description">Entrevistas</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedFilosofia || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCpWQDvJEwvVf7GzHKUrbR3w"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/cypriano.jpg"
+                className="avatar-image"
+              />
+              <div className="name">The Cypriano</div>
+              <div className="description">Filosofia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedFilosofia || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCRJooxeIg3O29IDIcPZPaCg"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/direito.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Direito Sem Juridiquês</div>
+              <div className="description">Filosofia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedEconomia ||
+          checkedFilosofia ||
+          checkedPolitica ||
+          checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/user/adrianogianturco"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/gianturco.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Adriano Gianturco</div>
+              <div className="description">Filosofia, Política, Economia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedFilosofia || checkedPolitica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCWhaFR2xSmcppTWxWTf4BMA"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/fabiomaz.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Fábio Maz</div>
+              <div className="description">Filosofia, Política</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedEconomia ||
+          checkedFilosofia ||
+          checkedPolitica ||
+          checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCnL00qrAdEH4yosYTbgNVlw"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/stonegarou.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Stone Garou</div>
+              <div className="description">Filosofia, Política, Economia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedEconomia || checkedFilosofia || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCbON19PsKqlrYHSr2qjxHcQ"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/rothgirl.jpg"
+                className="avatar-image"
+              />
+              <div className="name">RothGirl</div>
+              <div className="description">Filosofia, Economia</div>
             </a>
           </Grid>
         )}
