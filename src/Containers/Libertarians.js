@@ -4,7 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
-
 class Libertarians extends Component {
   state = {
     checkedFilosofia: false,
@@ -15,6 +14,7 @@ class Libertarians extends Component {
     checkedHumor: false,
     checkedMusica: false,
     checkedTecnologia: false,
+    checkedEntrevistas: false,
   };
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked });
@@ -29,6 +29,7 @@ class Libertarians extends Component {
       checkedHumor,
       checkedMusica,
       checkedTecnologia,
+      checkedEntrevistas,
     } = this.state;
     let checkedAll = true;
     if (
@@ -39,7 +40,8 @@ class Libertarians extends Component {
       checkedMusica ||
       checkedNoticias ||
       checkedPolitica ||
-      checkedTecnologia
+      checkedTecnologia ||
+      checkedEntrevistas
     ) {
       checkedAll = false;
     }
@@ -154,6 +156,18 @@ class Libertarians extends Component {
                 }
                 label="Música"
               />
+              <FormControlLabel
+                className="filter-option"
+                control={
+                  <Switch
+                    checked={this.state.checkedEntrevistas}
+                    onChange={this.handleChange("checkedEntrevistas")}
+                    value="checkedEntrevistas"
+                    color="primary"
+                  />
+                }
+                label="Entrevistas"
+              />
             </FormGroup>
           </div>
         </Grid>
@@ -181,7 +195,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedEconomia ||
           checkedCriptomoedas ||
           checkedTecnologia ||
@@ -205,7 +218,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -227,7 +239,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -246,7 +257,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -268,7 +278,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -290,7 +299,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -312,7 +320,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -334,7 +341,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedNoticias ||
           checkedEconomia ||
@@ -356,7 +362,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -375,7 +380,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -394,7 +398,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -413,7 +416,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedHumor || checkedMusica || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -432,7 +434,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -454,7 +455,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -476,7 +476,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -567,7 +566,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedFilosofia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -586,7 +584,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-
         {(checkedPolitica || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
@@ -654,7 +651,7 @@ class Libertarians extends Component {
                 src="/img/bitconheiros.jpg"
                 className="avatar-image"
               />
-              <div className="name">Bitconheiros</div>
+              <div className="name">Bitcoinheiros</div>
               <div className="description">Criptomoedas</div>
             </a>
           </Grid>
@@ -845,6 +842,114 @@ class Libertarians extends Component {
               />
               <div className="name">Arthur Petry</div>
               <div className="description">Humor</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedCriptomoedas || checkedTecnologia || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/c/brunogarcia99"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/brunogarcia.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Bruno Garcia</div>
+              <div className="description">Criptomoedas, Tecnologia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedCriptomoedas || checkedTecnologia || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UC1OOmmuYyUimzsxcwpf7mHA"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/criptotec.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Cripto Tec</div>
+              <div className="description">Criptomoedas, Tecnologia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedMusica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCvHBUq2A27OeITnWesAwUJw"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/jayjay.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Jay Jay Ⓥ</div>
+              <div className="description">Música</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedPolitica || checkedFilosofia || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCY0v0I-00pjwdN5bzOtZLkA"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/oagorista.jpg"
+                className="avatar-image"
+              />
+              <div className="name">O Agorista</div>
+              <div className="description">Filosofia, Economia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedEntrevistas || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/CerradoLivre"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/cerradolivre.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Cerrado Livre</div>
+              <div className="description">Entrevistas</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedEntrevistas || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCXi0ZRxNBP7COCMfyl8z5gg"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/anarcoze.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Projeto Anarcoze</div>
+              <div className="description">Entrevistas</div>
             </a>
           </Grid>
         )}
