@@ -42,6 +42,7 @@ class Donation extends Component {
             alt="Doe Bitcoins"
             className="image image-small"
           />
+          <p>18kXMmrDtgfeQgVmwfmygTaYLyQuVS4chK</p>
         </Grid>
         <Grid item className="avatar-container" xs={12}>
           <h2>Quem desenvolveu o site?</h2>

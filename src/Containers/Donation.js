@@ -31,6 +31,7 @@ class About extends Component {
               alt="Doe Bitcoins"
               className="image image-small"
             />
+            <p>18kXMmrDtgfeQgVmwfmygTaYLyQuVS4chK</p>
           </div>
         </Grid>
       </Grid>

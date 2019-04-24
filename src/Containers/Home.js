@@ -1,22 +1,18 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
+import { NavLink } from "react-router-dom";
 import {
   FacebookShareButton,
   TwitterShareButton,
   TelegramShareButton,
   WhatsappShareButton,
   RedditShareButton,
-  EmailShareButton,
-  FacebookShareCount,
-  RedditShareCount,
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
   WhatsappIcon,
   RedditIcon,
-  EmailIcon,
 } from "react-share";
-
 class Home extends Component {
   state = {
     stage: 0,
@@ -188,7 +184,7 @@ class Home extends Component {
                 title="Imposto é roubo"
                 width="100%"
                 height="400"
-                src="https://www.youtube.com/embed/GRd-7saxCdw"
+                src="https://www.youtube.com/embed/XsbmavLkAwI"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               />
             </div>
@@ -203,9 +199,9 @@ class Home extends Component {
                   <FacebookIcon size={32} round />
                 </FacebookShareButton>
 
-                <FacebookShareCount url={shareUrl} className="social-count">
+                {/* <FacebookShareCount url={shareUrl} className="social-count">
                   {count => count}
-                </FacebookShareCount>
+                </FacebookShareCount> */}
               </div>
 
               <div className="social">
@@ -217,7 +213,7 @@ class Home extends Component {
                   <TwitterIcon size={32} round />
                 </TwitterShareButton>
 
-                <div className="social-count">&nbsp;</div>
+                {/* <div className="social-count">&nbsp;</div> */}
               </div>
               <div className="social">
                 <RedditShareButton
@@ -230,7 +226,7 @@ class Home extends Component {
                   <RedditIcon size={32} round />
                 </RedditShareButton>
 
-                <RedditShareCount url={shareUrl} className="social-count" />
+                {/* <RedditShareCount url={shareUrl} className="social-count" /> */}
               </div>
               <div className="social">
                 <TelegramShareButton
@@ -256,18 +252,13 @@ class Home extends Component {
 
                 <div className="social-count">&nbsp;</div>
               </div>
-              <div className="social">
-                <EmailShareButton
-                  url={shareUrl}
-                  subject={title}
-                  body="body"
-                  className="social-button"
-                >
-                  <EmailIcon size={32} round />
-                </EmailShareButton>
-              </div>
             </div>
             <div className="buttons">
+              <NavLink to={"/libertarios"} className="navlink">
+                <Button variant="contained" className="button" color="primary">
+                  Canais libertários
+                </Button>
+              </NavLink>
               <Button
                 onClick={this.handleChangeStage(0)}
                 variant="contained"

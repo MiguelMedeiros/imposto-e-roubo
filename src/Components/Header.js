@@ -35,9 +35,9 @@ class Header extends Component {
       <AppBar position="static" className="navbar" color="secondary">
         <Toolbar>
           <div className="logo">
-            <NavLink to={"/"} className="navlink">
+            <a href="/" className="navlink">
               Imposto é roubo?
-            </NavLink>
+            </a>
           </div>
           <div className="grow" />
 

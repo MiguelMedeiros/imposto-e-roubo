@@ -22,7 +22,7 @@ ul {
 
 @media screen and (min-width: 426px) {
   .app {
-    padding: 2rem;
+    padding: 0 2rem 2rem;
     margin-top: 2vh; } }
 
 .question {
@@ -39,12 +39,15 @@ ul {
   width: 100%;
   font-family: "Bree Serif", serif; }
 
+#menu-appbar .navlink {
+  width: 100% !important; }
+
 .navbar-bottom {
   position: fixed !important;
   bottom: 0;
   top: "auto"; }
 
-.navbar-bottom .navlink {
+.navbar-bottom .grow {
   flex-grow: 1; }
 
 .navbar-bottom .avatar-image {
@@ -73,7 +76,7 @@ ul {
 .video {
   width: 100%;
   max-width: 500px;
-  margin: 2rem auto 0; }
+  margin: 0.5rem auto 0; }
 
 .image iframe,
 .video iframe {
@@ -153,3 +156,13 @@ ul {
   margin-right: 17px;
   margin-left: 5px;
   top: 5px; }
+
+.filters span {
+  color: #fff !important; }
+
+.filter-option {
+  width: 100%; }
+
+@media screen and (min-width: 426px) {
+  .filter-option {
+    width: auto; } }
