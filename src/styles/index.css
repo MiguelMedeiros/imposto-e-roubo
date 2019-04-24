@@ -160,6 +160,9 @@ ul {
 .filters span {
   color: #fff !important; }
 
+.filters .MuiSwitch-bar-176 {
+  background: #898f94; }
+
 .filter-option {
   width: 100%; }
 
