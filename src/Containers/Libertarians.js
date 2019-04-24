@@ -755,6 +755,63 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
+        {(checkedFilosofia ||
+          checkedEconomia ||
+          checkedPolitica ||
+          checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UC6IJgpDhXg0JoULOXw74BKg"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/antiestado.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Anti Estado</div>
+              <div className="description">Filosofia, Economia, Política</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedMusica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UC3TSb13siLzhs-UHmIzBoSw"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/gabrielmorente.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Gabriel Morente</div>
+              <div className="description">Música</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedMusica || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UCJtvhFlHTHTZEcToA95wbig"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/slammer.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Slammer OG</div>
+              <div className="description">Música</div>
+            </a>
+          </Grid>
+        )}
       </Grid>
     );
   }
