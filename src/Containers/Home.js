@@ -188,6 +188,17 @@ class Home extends Component {
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               />
             </div>
+
+            <div className="ads">
+              <a
+                href="https://loja.ideiasradicais.com.br/camiseta-ideias-radicais-imposto-e-roubo-preta"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="/img/camisetaideiasradicais.png" />
+              </a>
+            </div>
+
             <div className="share-title">Compartilhe essa verdade!</div>
             <div className="share-buttons">
               <div className="social">

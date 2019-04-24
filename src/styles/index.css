@@ -169,3 +169,8 @@ ul {
 @media screen and (min-width: 426px) {
   .filter-option {
     width: auto; } }
+
+.ads img {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1rem; }
