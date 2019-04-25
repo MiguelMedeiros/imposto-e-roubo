@@ -32,6 +32,7 @@ class Libertarians extends Component {
       checkedTecnologia,
       checkedEntrevistas,
       checkedPodcast,
+      checkedDireito,
     } = this.state;
     let checkedAll = true;
     if (
@@ -44,7 +45,8 @@ class Libertarians extends Component {
       checkedPolitica ||
       checkedTecnologia ||
       checkedEntrevistas ||
-      checkedPodcast
+      checkedPodcast ||
+      checkedDireito
     ) {
       checkedAll = false;
     }
@@ -182,6 +184,18 @@ class Libertarians extends Component {
                   />
                 }
                 label="Podcast"
+              />
+              <FormControlLabel
+                className="filter-option"
+                control={
+                  <Switch
+                    checked={this.state.checkedDireito}
+                    onChange={this.handleChange("checkedDireito")}
+                    value="checkedDireito"
+                    color="primary"
+                  />
+                }
+                label="Direito"
               />
             </FormGroup>
           </div>
@@ -416,7 +430,7 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-        {(checkedFilosofia || checkedAll) && (
+        {(checkedFilosofia || checkedEconomia || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
               href="https://www.youtube.com/channel/UCOq_USHG_AogX4dwqBYlvhQ"
@@ -430,7 +444,7 @@ class Libertarians extends Component {
                 className="avatar-image"
               />
               <div className="name">So to Speak</div>
-              <div className="description">Filosofia</div>
+              <div className="description">Filosofia, Economia</div>
             </a>
           </Grid>
         )}
@@ -452,7 +466,7 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-        {(checkedHumor || checkedMusica || checkedAll) && (
+        {/* {(checkedHumor || checkedMusica || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
               href="https://www.youtube.com/channel/UC6cALLZLWQGilBFBB0PWAog"
@@ -469,7 +483,7 @@ class Libertarians extends Component {
               <div className="description">Humor, Música</div>
             </a>
           </Grid>
-        )}
+        )} */}
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||
@@ -1012,7 +1026,7 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-        {(checkedFilosofia || checkedAll) && (
+        {(checkedFilosofia || checkedDireito || checkedAll) && (
           <Grid item className="avatar-container" xs={12} sm={6} md={3}>
             <a
               href="https://www.youtube.com/channel/UCRJooxeIg3O29IDIcPZPaCg"
@@ -1026,7 +1040,7 @@ class Libertarians extends Component {
                 className="avatar-image"
               />
               <div className="name">Direito Sem Juridiquês</div>
-              <div className="description">Filosofia</div>
+              <div className="description">Filosofia, Direito</div>
             </a>
           </Grid>
         )}
@@ -1105,6 +1119,24 @@ class Libertarians extends Component {
               />
               <div className="name">RothGirl</div>
               <div className="description">Filosofia, Economia</div>
+            </a>
+          </Grid>
+        )}
+        {(checkedNoticias || checkedHumor || checkedAll) && (
+          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
+            <a
+              href="https://www.youtube.com/channel/UC5rRQGCPscqQY0tdfO_JCxg"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="navlink"
+            >
+              <Avatar
+                alt="Libertário"
+                src="/img/augustus.jpg"
+                className="avatar-image"
+              />
+              <div className="name">Augustus</div>
+              <div className="description">Humor, Noticias</div>
             </a>
           </Grid>
         )}
