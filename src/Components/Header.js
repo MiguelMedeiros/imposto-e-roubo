@@ -67,9 +67,18 @@ class Header extends Component {
             >
               <MenuItem onClick={this.handleClose}>
                 <NavLink to={"/"} className="navlink">
-                  <FontAwesomeIcon className="fa-icon" icon={faQuestion} />{" "}
+                  <FontAwesomeIcon className="fa-icon" icon={faQuestion} />
                   Imposto é roubo?
                 </NavLink>
+              </MenuItem>
+              <MenuItem onClick={this.handleClose}>
+                <a
+                  href="https://www.eticaargumentativa.com/"
+                  className="navlink"
+                >
+                  <FontAwesomeIcon className="fa-icon" icon={faQuestion} />O que
+                  é ética argumentativa?
+                </a>
               </MenuItem>
               <MenuItem onClick={this.handleClose}>
                 <NavLink to={"/sobre"} className="navlink">
