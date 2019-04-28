@@ -5,6 +5,11 @@ const history = createHistory();
 
 history.listen((location, action) => {
   ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.event({
+    category: "Pageview",
+    action: "Page: " + window.location.pathname + window.location.search,
+    label: "Page: " + window.location.pathname + window.location.search,
+  });
   if (action === "PUSH") {
     window.scrollTo(0, 0);
   }

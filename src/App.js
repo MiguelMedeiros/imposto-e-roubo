@@ -25,6 +25,18 @@ class App extends Component {
 
     ReactGA.initialize("UA-138744306-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.event({
+      category: "Hello",
+      action: "New visitor arrived",
+      label: "New visitor",
+    });
+    setInterval(function() {
+      ReactGA.event({
+        category: "Ping",
+        action: "30 secs ping",
+        label: "30 secs ping",
+      });
+    }, 30000);
   }
 
   handleMenu = event => {
