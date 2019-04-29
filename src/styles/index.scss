@@ -218,3 +218,79 @@ ul {
     margin-bottom: 1rem;
   }
 }
+
+.menu-desktop {
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: flex;
+  }
+  .fa-icon {
+    margin-right: 0px !important;
+  }
+  .button {
+    text-transform: capitalize;
+    padding: 5px 7px !important;
+    margin: 0 0.5rem !important;
+    font-size: 15px !important;
+  }
+}
+
+.book {
+  padding: 1rem;
+  color: #000 !important;
+  background: #fff !important;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 525px;
+  min-height: 278px;
+  .image {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-width: 175px !important;
+  }
+  .item {
+    margin: auto;
+  }
+  .button {
+    margin: 5px auto !important;
+    padding: 10px 5px !important;
+    display: inline-block;
+    border-color: #000;
+    color: #000;
+    text-transform: initial;
+    width: 100%;
+    &:hover,
+    &:focus {
+      border-color: #ffeb3b;
+      background: #ffeb3b;
+      color: #000;
+    }
+  }
+  .button-feature {
+    background: #000;
+    color: #fff;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .author {
+    font-size: 14px;
+  }
+}
+
+.MuiSwitch-bar-202 {
+  background-color: #666 !important;
+}
+.MuiSwitch-checked-198 + .MuiSwitch-bar-202 {
+  background-color: #ffeb3b !important;
+}
+
+.modal {
+  position: absolute;
+  max-width: 700px;
+  background-color: #fff;
+  box-shadow: #000;
+  padding: 30px;
+  outline: "none";
+}

@@ -13,8 +13,10 @@ import {
   faQuestion,
   faInfo,
   faHandHoldingUsd,
+  faBook,
 } from "@fortawesome/free-solid-svg-icons";
 import Headroom from "react-headroom";
+import Button from "@material-ui/core/Button";
 
 class Header extends Component {
   state = {
@@ -42,7 +44,20 @@ class Header extends Component {
               </a>
             </div>
             <div className="grow" />
-
+            <div className="menu-desktop">
+              <NavLink to={"/libertarios"} className="navlink">
+                <Button className="button" color="inherit">
+                  <FontAwesomeIcon className="fa-icon" icon={faYoutube} />
+                  Canais
+                </Button>
+              </NavLink>
+              <NavLink to={"/biblioteca"} className="navlink">
+                <Button className="button" color="inherit">
+                  <FontAwesomeIcon className="fa-icon" icon={faBook} />
+                  Biblioteca
+                </Button>
+              </NavLink>
+            </div>
             <div>
               <IconButton
                 aria-owns={open ? "menu-appbar" : undefined}
@@ -92,6 +107,12 @@ class Header extends Component {
                   <NavLink to={"/libertarios"} className="navlink">
                     <FontAwesomeIcon className="fa-icon" icon={faYoutube} />
                     Conheça canais Libertários.
+                  </NavLink>
+                </MenuItem>
+                <MenuItem onClick={this.handleClose}>
+                  <NavLink to={"/biblioteca"} className="navlink">
+                    <FontAwesomeIcon className="fa-icon" icon={faBook} />
+                    Biblioteca Libertária
                   </NavLink>
                 </MenuItem>
                 <MenuItem onClick={this.handleClose}>

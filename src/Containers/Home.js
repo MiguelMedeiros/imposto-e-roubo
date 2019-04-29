@@ -201,7 +201,10 @@ class Home extends Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img src="/img/camisetaideiasradicais.png" />
+                <img
+                  src="/img/camisetaideiasradicais.png"
+                  alt="Loja Ideias Radicais"
+                />
               </a>
             </div>
 

@@ -466,24 +466,6 @@ class Libertarians extends Component {
             </a>
           </Grid>
         )}
-        {/* {(checkedHumor || checkedMusica || checkedAll) && (
-          <Grid item className="avatar-container" xs={12} sm={6} md={3}>
-            <a
-              href="https://www.youtube.com/channel/UC6cALLZLWQGilBFBB0PWAog"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="navlink"
-            >
-              <Avatar
-                alt="Libertário"
-                src="/img/maiconkuster.jpg"
-                className="avatar-image"
-              />
-              <div className="name">Maicon Küster</div>
-              <div className="description">Humor, Música</div>
-            </a>
-          </Grid>
-        )} */}
         {(checkedFilosofia ||
           checkedPolitica ||
           checkedEconomia ||

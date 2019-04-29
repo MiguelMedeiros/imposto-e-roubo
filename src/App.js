@@ -6,6 +6,7 @@ import ReactGA from "react-ga";
 
 import Home from "./Containers/Home";
 import Libertarians from "./Containers/Libertarians";
+import Library from "./Containers/Library";
 import Donation from "./Containers/Donation";
 import About from "./Containers/About";
 import Header from "./Components/Header";
@@ -52,6 +53,7 @@ class App extends Component {
             <Route path="/" component={Home} exact />
             <Route path="/sobre" component={About} exact />
             <Route path="/libertarios" component={Libertarians} exact />
+            <Route path="/biblioteca" component={Library} exact />
             <Route path="/contribua" component={Donation} exact />
           </Switch>
           <Footer />
