@@ -8,15 +8,8 @@ import Modal from "../Components/Modal";
 
 class Book extends React.Component {
   render() {
-    const {
-      link,
-      image,
-      bookTitle,
-      bookAuthor,
-      content,
-      audio,
-    } = this.props;
-
+    const { link, image, bookTitle, bookAuthor, content, audio } = this.props;
+    let url = "/img/" + image;
     return (
       <Paper className="book">
         <Grid container spacing={16}>
@@ -25,7 +18,7 @@ class Book extends React.Component {
               <a rel="noopener noreferrer" target="_blank" href={link}>
                 <img
                   border="0"
-                  src={image}
+                  src={url}
                   alt="Amazon books"
                   className="image"
                 />
