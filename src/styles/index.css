@@ -158,6 +158,7 @@ ul {
   top: 5px; }
 
 .filters span {
+  text-transform: capitalize;
   color: #fff !important; }
 
 .filters .MuiSwitch-bar-176 {
