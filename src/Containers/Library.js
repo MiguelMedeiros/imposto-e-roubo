@@ -7,62 +7,34 @@ import Book from "../Components/Book";
 const { books } = require("../Data/books.json");
 
 class Library extends Component {
-  state = {
-    checkedFilosofia: false,
-    checkedCriptomoedas: false,
-    checkedPolitica: false,
-    checkedEconomia: false,
-    checkedTecnologia: false,
+
+  getSelectedFilters = () => {
+    const params = new URLSearchParams(this.props.location.search);
+    const filters = params.get('filters');
+    return filters ? filters.split(',') : [];
   };
 
   handleChange = name => event => {
-    this.setState({ [name]: event.target.checked });
-  };
-  checkFilter = filter => {
-    const {
-      checkedFilosofia,
-      checkedCriptomoedas,
-      checkedPolitica,
-      checkedEconomia,
-      checkedTecnologia,
-    } = this.state;
-    for (let i = 0; i < filter.length; i++) {
-      if (checkedCriptomoedas && filter[i] === "criptomoedas") {
-        return true;
-      }
-      if (checkedFilosofia && filter[i] === "filosofia") {
-        return true;
-      }
-      if (checkedPolitica && filter[i] === "politica") {
-        return true;
-      }
-      if (checkedEconomia && filter[i] === "economia") {
-        return true;
-      }
-      if (checkedTecnologia && filter[i] === "tecnologia") {
-        return true;
-      }
+    let filters = this.getSelectedFilters();
+    if (event.target.checked) {
+      filters.push(name);
+    } else {
+      filters = filters.filter(x => x !== name);
     }
-    return false;
+
+    this.props.history.replace({
+      ...this.props.location,
+      search: !filters.length ? '' : '?filters=' + filters.join(',')
+    });
   };
+
   render() {
-    const {
-      checkedFilosofia,
-      checkedCriptomoedas,
-      checkedPolitica,
-      checkedEconomia,
-      checkedTecnologia,
-    } = this.state;
-    let checkedAll = true;
-    if (
-      checkedFilosofia ||
-      checkedCriptomoedas ||
-      checkedEconomia ||
-      checkedPolitica ||
-      checkedTecnologia
-    ) {
-      checkedAll = false;
-    }
+    const bookFilters = books
+      .reduce((acc, book) => acc.concat(book.filter), [])
+      .filter((value, index, self) => {
+        return self.indexOf(value) === index;
+      }).sort();
+    const selectedFilters = this.getSelectedFilters();
 
     return (
       <Grid
@@ -79,72 +51,27 @@ class Library extends Component {
           </p>
           <div className="filters">
             <FormGroup row>
-              <FormControlLabel
-                className="filter-option"
-                control={
-                  <Switch
-                    checked={this.state.checkedFilosofia}
-                    onChange={this.handleChange("checkedFilosofia")}
-                    value="checkedFilosofia"
-                    color="primary"
-                  />
-                }
-                label="Filosofia"
-              />
-              <FormControlLabel
-                className="filter-option"
-                control={
-                  <Switch
-                    checked={this.state.checkedCriptomoedas}
-                    onChange={this.handleChange("checkedCriptomoedas")}
-                    value="checkedCriptomoedas"
-                    color="primary"
-                  />
-                }
-                label="Criptomoedas"
-              />
-              <FormControlLabel
-                className="filter-option"
-                control={
-                  <Switch
-                    checked={this.state.checkedTecnologia}
-                    onChange={this.handleChange("checkedTecnologia")}
-                    value="checkedTecnologia"
-                    color="primary"
-                  />
-                }
-                label="Tecnologia"
-              />
-              <FormControlLabel
-                className="filter-option"
-                control={
-                  <Switch
-                    checked={this.state.checkedPolitica}
-                    onChange={this.handleChange("checkedPolitica")}
-                    value="checkedPolitica"
-                    color="primary"
-                  />
-                }
-                label="Política"
-              />
-              <FormControlLabel
-                className="filter-option"
-                control={
-                  <Switch
-                    checked={this.state.checkedEconomia}
-                    onChange={this.handleChange("checkedEconomia")}
-                    value="checkedEconomia"
-                    color="primary"
-                  />
-                }
-                label="Economia"
-              />
+              {bookFilters.map(f => (
+                <FormControlLabel
+                  className="filter-option"
+                  control={
+                    <Switch
+                      checked={selectedFilters.includes(f)}
+                      onChange={this.handleChange(f)}
+                      value={f}
+                      color="primary"
+                    />
+                  }
+                  label={f}
+                  key={f}
+                />))}
             </FormGroup>
           </div>
         </Grid>
 
-        {books.map((row, index) => {
-          if (this.checkFilter(row.filter) || checkedAll) {
+        {books
+          .filter(row => !selectedFilters.length || selectedFilters.some(sf => row.filter.includes(sf)))
+          .map((row, index) => {
             return (
               <Book
                 key={index}
@@ -156,10 +83,7 @@ class Library extends Component {
                 audio={row.audio}
               />
             );
-          }else{
-            return ("");
-          }
-        })}
+          })}
       </Grid>
     );
   }
