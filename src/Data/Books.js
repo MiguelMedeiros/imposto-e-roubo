@@ -1,0 +1,264 @@
+const Books = [
+  {
+    link: "https://amzn.to/2DBo9HQ",
+    image: "acaohumana.png",
+    bookTitle: "Ação Humana",
+    bookAuthor: "Ludwig Von Mises",
+    content:
+      "Obra magna de Ludwig von Mises, um dos maiores economistas da História, A ação humana pode ser considerado um dos pilares da ciência econômica do século XX. O livro, um tratado econômico, centra-se na refutação das teorias que excluem a participação humana dos processos econômicos. O núcleo do pensamento do autor é a Teoria da Ação Humana, ou Praxiologia, a ciência geral que ele busca explicar. Para ele, tudo que procuramos estudar em economia origina-se da escolha individual. O homem não escolhe apenas entre diversos bens e serviços, todos os valores humanos lhe são oferecidos como opção e submetidos às decisões individuais: o princípio da responsabilidade. Portanto, a teoria da escolha é muito mais do que o lado “econômico” do empreendimento humano – é central a toda a ação humana: a ação dos indivíduos. A ação humana é uma obra-prima da filosofia econômica, podendo ser lido tanto por acadêmicos quanto por cidadãos comuns que busquem entender o fenômeno dos preços, da inflação, da livre iniciativa, do Mercado como um todo: nada escapa à lente de von Mises.",
+    audio: "yawgG0nR_Go",
+    filter: ["filosofia", "economia"],
+  },
+  {
+    link: "https://amzn.to/2VxpYQg",
+    image: "caminhodaservidao.jpg",
+    bookTitle: "O Caminho da Servidão",
+    bookAuthor: "F.A. Hayek",
+    content:
+      "A tese central de Hayek é que todas as formas de coletivismo, seja o nazismo ou o socialismo, levam inevitavelmente à tirania e à supressão das liberdades, conforme já se evidenciava à época pelos exemplos da Alemanha Nazista, da União Soviética, e dos demais países do bloco comunista. O autor argumenta que, em um sistema de planejamento central da economia, a alocação de recursos é de responsabilidade de um pequeno grupo, sendo este incapaz de processar a enorme quantidade de informações pertinentes à adequada distribuição destes bens à sua disposição. Face à gigantesca concentração de poder nas mãos de um limitado número de burocratas, divergências acerca da implementação das políticas econômicas levaria inexerovalmente ao uso da força pelo governo para que suas medidas fossem toleradas.",
+    audio: "r1kDfStdb0I",
+    filter: ["filosofia", "economia"],
+  },
+  {
+    link: "https://amzn.to/2GQcpTO",
+    image: "anatomiadoestado.jpg",
+    bookTitle: "Anatomia do Estado",
+    bookAuthor: "Murray N. Rothbard",
+    content:
+      "Se estamos falando hoje de liberdade, isso é quase certamente resultado do trabalho de Murray N. Rothbard (1926-1995). Sua obra é extensa, diversa e profunda, ao ponto que seria razoável questionar se o dia dele tinha mais horas que normal. 'Anatomia do Estado' é um de seus trabalhos mais diretos. O texto é uma descrição, sem rodeios, sem emoção, sem fantasias, do que o Estado realmente é. É curioso como boa parte das críticas que esse livro atrai é justamente por sua franqueza, por não tentar dar um significado maior a algo tão simples. Toda pessoa deveria ler 'Anatomia do Estado', afinal é básico entender a verdade sobre o sistema que controla todos os aspectos de sua vida. As conclusões podem ser chocantes, mas irrefutáveis. É impossível emergir dessa leitura sem uma nova visão do Estado, e do que deve ser feito com ele. -- Raphaël Lima (Youtuber criador do canal Ideias Radicais).",
+    audio: "T-0Bui7f3Dk",
+    filter: ["filosofia", "economia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2DBnoi0",
+    image: "asseislicoes.jpg",
+    bookTitle: "As Seis Lições",
+    bookAuthor: "Ludwig Von Mises",
+    content:
+      "As Seis Lições reúne as palestras ministradas, em 1959, por Ludwig von Mises na Universidade de Buenos Aires (UBA). O autor discute com clareza o capitalismo, o socialismo, o intervencionismo, a inflação, o investimento estrangeiro e as relações entre política e ideias. Em linguagem agradável, a obra apresenta as linhas gerais do pensamento misesiano sendo, ao mesmo tempo, uma das melhores introduções à Política e à Economia. Além do prefácio original de Margit von Mises, viúva do autor, a presente edição conta com uma apresentação bibliográfica do economista austríaco escrita por Helio Beltão e Alex Catharino.",
+    audio: "XCfPCKlRSZw",
+    filter: ["filosofia", "economia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2IYRDCY",
+    image: "alei.jpg",
+    bookTitle: "A Lei",
+    bookAuthor: "Claude Frederic Bastiat",
+    content:
+      "Escrito no ano da morte do autor, A lei é um bom diagnóstico da situação da França pós-revolucionária com relação as ideias de lei e justiça promovida por certos filósofos. Para ele, a Lei deve proteger o indivíduo, a liberdade e a propriedade privada. Infelizmente, essa mesma lei pode ser pervertida e posta a serviço de interesses particulares, tornando-se, então, um instrumento de espoliação. É dessa maneira que Bastiat analisa o funcionamento do Estado, esta “grande ficção através da qual todos se esforçam para viver às custas dos demais”. Para o autor, protecionismo, intervencionismo e socialismo são as três forças de perversão da lei. Apesar de escrito há mais de 160 anos, a temática permanece atual.",
+    audio: "LBmAej8x8NU",
+    filter: ["filosofia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2DE2rmz",
+    image: "bitcoinamoedanaeradigital.jpg",
+    bookTitle: "Bitcoin. A Moeda na Era Digital",
+    bookAuthor: "Fernando Ulrich",
+    content:
+      "O Bitcoin é uma forma de dinheiro, assim como o real, dólar ou euro, com a diferença de ser puramente digital e não ser emitido por nenhum governo. O seu valor é determinado livremente pelos indivíduos no mercado. Você lembra como a internet e o e-mail revolucionaram a comunicação? Antes, para enviar uma mensagem a uma pessoa do outro lado da Terra, era necessário fazer isso pelos correios. Nada mais antiquado. Você dependia de um intermediário para, fisicamente, entregar uma mensagem. Pois é, retornar a essa realidade é inimaginável. O que o e-mail fez com a informação, o Bitcoin fará com o dinheiro. Com o Bitcoin você pode transferir fundos de A para B em qualquer parte do mundo sem jamais precisar confiar em um terceiro para essa simples tarefa. O Bitcoin é a maior inovação tecnológica desde a internet, é revolucionário, sem precedentes e tem o potencial de mudar o mundo de uma forma jamais vista. À moeda, ele é o futuro. Ao avanço da liberdade individual, é uma esperança e uma grata novidade.",
+    audio: "YqtgfA4Hg7U",
+    filter: ["tecnologia", "criptomoedas"],
+  },
+  {
+    link: "https://amzn.to/2ZGzAYd",
+    image: "materingbitcoin.jpg",
+    bookTitle: "Mastering Bitcoin",
+    bookAuthor: "Andreas Antonopoulos",
+    content:
+      "Join the technological revolution that's taking the financial world by storm. Mastering Bitcoin is your guide through the seemingly complex world of bitcoin, providing the knowledge you need to participate in the internet of money. Whether you're building the next killer app, investing in a startup, or simply curious about the technology, this revised and expanded second edition provides essential detail to get you started. Bitcoin, the first successful decentralized digital currency, is still in its early stages and yet it's already spawned a multi-billion-dollar global economy open to anyone with the knowledge and passion to participate. Mastering Bitcoin provides the knowledge. You simply supply the passion.",
+    audio: "hEpNDK3q__Q",
+    filter: ["tecnologia", "criptomoedas"],
+  },
+  {
+    link: "https://amzn.to/2LbtgVu",
+    image: "thebitcoinstandard.jpg",
+    bookTitle: "The Bitcoin Standard",
+    bookAuthor: "Saifedean Ammous",
+    content:
+      "When a pseudonymous programmer introduced “a new electronic cash system that’s fully peer-to-peer, with no trusted third party” to a small online mailing list in 2008, very few paid attention. Ten years later, and against all odds, this upstart autonomous decentralized software offers an unstoppable and globally-accessible hard money alternative to modern central banks. The Bitcoin Standard analyzes the historical context to the rise of Bitcoin, the economic properties that have allowed it to grow quickly, and its likely economic, political, and social implications. While Bitcoin is a new invention of the digital age, the problem it purports to solve is as old as human society itself: transferring value across time and space. Ammous takes the reader on an engaging journey through the history of technologies performing the functions of money, from primitive systems of trading limestones and seashells, to metals, coins, the gold standard, and modern government debt. Exploring what gave these technologies their monetary role, and how most lost it, provides the reader with a good idea of what makes for sound money, and sets the stage for an economic discussion of its consequences for individual and societal future-orientation, capital accumulation, trade, peace, culture, and art. Compellingly, Ammous shows that it is no coincidence that the loftiest achievements of humanity have come in societies enjoying the benefits of sound monetary regimes, nor is it coincidental that monetary collapse has usually accompanied civilizational collapse. With this background in place, the book moves on to explain the operation of Bitcoin in a functional and intuitive way. Bitcoin is a decentralized, distributed piece of software that converts electricity and processing power into indisputably accurate records, thus allowing its users to utilize the Internet to perform the traditional functions of money without having to rely on, or trust, any authorities or infrastructure in the physical world. Bitcoin is thus best understood as the first successfully implemented form of digital cash and digital hard money. With an automated and perfectly predictable monetary policy, and the ability to perform final settlement of large sums across the world in a matter of minutes, Bitcoin’s real competitive edge might just be as a store of value and network for final settlement of large payments—a digital form of gold with a built-in settlement infrastructure. Ammous’ firm grasp of the technological possibilities as well as the historical realities of monetary evolution provides for a fascinating exploration of the ramifications of voluntary free market money. As it challenges the most sacred of government monopolies, Bitcoin shifts the pendulum of sovereignty away from governments in favor of individuals, offering us the tantalizing possibility of a world where money is fully extricated from politics and unrestrained by borders. The final chapter of the book explores some of the most common questions surrounding Bitcoin: Is Bitcoin mining a waste of energy? Is Bitcoin for criminals? Who controls Bitcoin, and can they change it if they please? How can Bitcoin be killed? And what to make of all the thousands of Bitcoin knock-offs, and the many supposed applications of Bitcoin’s ‘blockchain technology’? The Bitcoin Standard is the essential resource for a clear understanding of the rise of the Internet’s decentralized, apolitical, free-market alternative to national central banks.",
+    audio: "Zbm772vF-5M",
+    filter: ["tecnologia", "criptomoedas"],
+  },
+  {
+    link: "https://amzn.to/2GQeFdK",
+    image: "democraciaodeusquefalhou.jpg",
+    bookTitle: "Democracia. O Deus que Falhou",
+    bookAuthor: "Hans-Hermann Hoppe",
+    content:
+      "Obra mais emblemática de Hans-Hermann Hoppe e propõe uma verdadeira revolução intelectual contra a legitimidade da democracia como entendemos hoje. É uma interpretação econômica e filosófica da História e salienta os incentivos associados aos governos de propriedade privada (monarquia) e de propriedade pública (democracia) visando compreender o crescente expansionismo dos governos. Este livro é uma leitura aconselhável a todos os que perderam a fé na democracia como vemos aplicada no mundo atual e que não toleram mais suas falhas éticas e econômicas. Explica de maneira lapidar a contradição entre democracia, liberdade e do aumento do bem-estar da sociedade. O argumento moral de Hoppe é corajoso e cuidadosamente justificado na obra.",
+    audio: "3WUQ2lVJwpU",
+    filter: ["filosofia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2GF6fol",
+    image: "oqueogovernofezcomonossodinheiro.jpg",
+    bookTitle: "O que o Governo Fez com o Nosso Dinheiro?",
+    bookAuthor: "Murray N. Rothbard",
+    content:
+      "Há décadas que inúmeros economistas, investidores, analistas, professores e autores aprendem com este livro. Após 50 anos, ele permanece o melhor livro sobre o assunto, um verdadeiro manifesto em prol de uma moeda forte. Rothbard mostra minuciosamente como os bancos criam dinheiro do nada e como o Banco Central, com o suporte do poder estatal, permite esta prática. Ele mostra como as taxas de câmbio e de juros funcionariam em um livre mercado. E principalmente: ao descrever o fim do padrão-ouro, ele não se limita a relatar os grandes acontecimentos; ele cita nomes e desmascara os grupos de interesse envolvidos. A verdadeira paixão que Rothbard sente pelo tema é transferida aos leitores por meio de sua prosa. Impossível não se empolgar com o tema. Quem lê sobre o tópico sempre quer divulgar o que aprendeu. Mais ainda: sente-se impelido a fazer alguma coisa. O ex-congressista Ron Paul confessou que se candidatou ao Congresso americano após ter lido este livro. Por ser um meio de troca, o dinheiro está presente em grande parte da vida cotidiana de todas as pessoas. Portanto, um entendimento sobre sua natureza, alternativas e história é importante para todos. Por isso, esta é uma obra indispensável.",
+    audio: "LM4ghswKfg0",
+    filter: ["politica", "economia"],
+  },
+  {
+    link: "https://amzn.to/2GQ5aLO",
+    image: "aeticadaliberdade.jpg",
+    bookTitle: "A Ética da Liberdade",
+    bookAuthor: "Murray N. Rothbard",
+    content:
+      "Lançado em 1982, A ética da liberdade apresenta uma rigorosa e sofisticada defesa filosófica da liberdade, baseada no conceito do direito natural. Dando sequência à demonstração de seu mentor Mises de que a sociedade sem propriedade privada se degenera em caos econômico, Rothbard mostra que a interferência estatal sobre a propriedade privada representa uma invasão, que diminui a liberdade e a prosperidade. Suas conclusões radicais se mostram surpreendentemente práticas para lidar com dilemas éticos do dia-a-dia, tais como autodefesa, punições, direitos das crianças e dos animais, entre outros.",
+    audio: "3YfPDzVdX2g",
+    filter: ["politica", "filosofia"],
+  },
+  {
+    link: "https://amzn.to/2UZ1AYp",
+    image: "porumanovaliberdade.jpg",
+    bookTitle: "Por Uma Nova Liberdade: o Manifesto Libertário",
+    bookAuthor: "Murray N. Rothbard",
+    content:
+      "Manifesto integral de exposição do libertarianismo moderno. Propõe uma “ciência da liberdade” apresentando as armadilhas do pensamento da esquerda, da direita e do centro. De argumentação lógica e clara, o manifesto reforça a importância da autonomia individual, dos direitos de propriedade, dos mercados livres e do combate ao Estado. Oferece uma versão totalmente inovadora e sem meias-palavras do que deve ser a liberdade no sentido mais radical do termo. É um texto clássico para os defensores da liberdade.",
+    audio: "w3HNXuBANIM",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://amzn.to/2GOlyfA",
+    image: "educacaolivre.jpg",
+    bookTitle: "Educação. Livre e Obrigatória",
+    bookAuthor: "Murray N. Rothbard",
+    content:
+      "Por qual razão tantas pessoas estão insatisfeitas com o sistema de ensino atual? Por que gerações de reformadores fracassaram em melhorar o sistema educacional, e ainda fizeram com que ele se degenerasse cada vez mais em direção a um nível de mediocridade cada vez pior? Nesta monografia acadêmica e radical, Rothbard identifica os pontos cruciais do sistema educacional que o condenaram ao fracasso: em cada um de seus níveis, do financiamento ao comparecimento, o sistema se baseia na compulsão e não no consentimento voluntário. E isso acarreta em algumas consequências. O currículo é politizado para refletir as prioridades ideológicas do regime no poder. Ocorre um contínuo rebaixamento dos padrões para se adaptarem ao menor denominador comum. Não se permite que as crianças mais inteligentes desenvolvam seus potenciais, as necessidades especiais de determinadas crianças são negligenciadas, e os alunos médios são reduzidos a engrenagens anônimas de uma máquina. Conforme Kevin Ryan, da Universidade de Boston, indica na introdução, se a reforma educacional algum dia conseguir provocar mudanças fundamentais, ela terá que começar com um repensar completo do ensino público como o que Rothbard nos oferece aqui.",
+    audio: "98MeKLBX0M4",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://amzn.to/2GGgcBP",
+    image: "umateoriadosocialismo.jpg",
+    bookTitle: "Uma Teoria do Socialismo e do Capitalismo",
+    bookAuthor: "Hans-Hermann Hoppe",
+    content:
+      "O professor Hoppe apresenta a tese de que só é possível existir dois arquétipos econômicos: socialismo e capitalismo. Todos os outros sistemas são combinações destes dois tipos. Ele define o modelo capitalista como a absoluta proteção da propriedade privada, da livre associação e da troca – sem exceções. Quaisquer desvios deste ideal são espécies de socialismo, onde ocorrem propriedade pública e interferências no comércio. Como parte da estrutura do socialismo, ele distingue as versões de esquerda e de direita. O socialismo “conservador” apoia intensas regulamentações, controles comportamentais, protecionismo e nacionalismo. A versão “esquerdista” tende mais ao apoio da estatização e da redistribuição. As consequências do socialismo variam de acordo com seu grau e tipo, mas possuem similaridades: alto custo, desperdício de recursos e baixo crescimento.",
+    audio: "brwcsR4EDW0",
+    filter: ["filosofia", "economia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2V0Wf2T",
+    image: "contrapropriedadeintelectual.jpg",
+    bookTitle: "Contra a Propriedade Intelectual",
+    bookAuthor: "N. Stephan Kinsella",
+    content:
+      "Esta monografia de Stephan Kinsella é justamente considerada um clássico moderno. Foi ela que fez com que libertários do mundo inteiro reconsiderassem suas posições relativas as fundamentações da propriedade intelectual. Mises alertou sobre o perigo das patentes, e Rothbard também. Mas Kinsella vai muito mais a fundo e argumenta que a simples existência de patentes é incompatível com o livre mercado, e inclui aí os direitos autorais e as marcas registradas. Eles se utilizam do estado para criar escassez artificial de bens não escassos e fazem uso da coerção de um modo que contraria os direitos de propriedade e a liberdade contratual. Muitas pessoas que leram este ensaio pela primeira vez foram pegas de surpresa pelo rigor de sua argumentação, que leva algum tempo para ser assimilada, pois num primeiro momento a ideia pode chocar. Porém, Kinsella demonstra sua razão através de uma lógica poderosa e exemplos que possuem um poder de convencimento avassalador.",
+    audio: "OkEQCbo88SU",
+    filter: ["filosofia", "economia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2J3rLpx",
+    image: "liberalismo.jpg",
+    bookTitle: "Liberalismo",
+    bookAuthor: "Ludwig Von Mises",
+    content:
+      "Marx tem sido merecidamente acusado de haver escrito uma condenação ao capitalismo e de não ter nunca conseguido - nem os seus seguidores — descrever o funcionamento de uma sociedade socialista. A atitude de Mises é diferente: tendo denunciado as falácias do socialismo, foi levado por sua honestidade a explicitar também o que seria uma sociedade liberal. Escreveu então Liberalismo. Esta obra, que nos fornece a base de uma ideologia liberal, apresenta a mais viva condenação ao colonialismo e a advertência do que poderia ocorrer — e infelizmente ocorreu na Alemanha — por força da crescente intervenção do estado na vida dos cidadãos.",
+    audio: "PcXRg7G-Eq0",
+    filter: ["filosofia", "economia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2GFaT5L",
+    image: "umabrevehistoriadohomem.jpg",
+    bookTitle: "Uma Breve História do Homem. Progresso e Declínio",
+    bookAuthor: "Hans-Hermann Hoppe",
+    content:
+      "“Usando seu conhecimento vasto e as reflexões da Escola Austríaca de Economia, Hans-Hermann Hoppe aborda ao longo de 'Uma Breve História do Homem', duas questões principais: Qual a origem da família e da propriedade privada? Como a Revolução Industrial teve início? Os leitores verão que o desenvolvimento do direito à propriedade assegurado e o livre-mercado foram essenciais para o progresso da humanidade. A pergunta a ser feita em relação ao nosso tempo é: Estes conceitos continuarão a evoluir, beneficiando toda a humanidade, ou o Estado será capaz de frustrar esta evolução?” -- Llewellyn H. Rockwell, Jr. (Fundador e CEO do Ludwig von Mises Institute)",
+    audio: "yyuh9fG72mA",
+    filter: ["filosofia", "economia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2J3s7wn",
+    image: "oquedeveserfeito.jpg",
+    bookTitle: "O que Deve Ser Feito",
+    bookAuthor: "Hans-Hermann Hoppe",
+    content:
+      "Em O Que deve ser feito, Hans-Hermann Hoppe faz uma dissecação da natureza do estado democrático moderno e apresenta uma estratégia para uma revolução libertária de baixo para cima. Hoppe começa com o exame da natureza do estado definindo-o como 'um monopolista territorial da defesa e da aplicação da lei e da ordem financiado compulsoriamente'. Como qualquer monopólio, o monopólio da aplicação da lei também gera preços mais altos e piora na qualidade dos serviços. Por que esta situação é tolerada? Os estados democráticos modernos, num grau muito mais elevado que as monarquias e os estados principescos de antigamente, são vistos como morais e necessários, mesmo diante de inúmeras evidências contrárias. Os cidadãos dos estados democráticos consideram que lei e ordem são o que o estado determina que sejam, e isto resultou em um longo período de centralização e consolidação do poder dos estados. Como os libertários podem lutar contra esta tendência? HHH oferece um programa capaz de pavimentar a estrada rumo a uma nova sociedade livre.",
+    audio: "QHDRahEdYYM",
+    filter: ["filosofia", "economia", "politica"],
+  },
+  {
+    link: "https://amzn.to/2XUtRfQ",
+    image: "aescolaaustriaca.jpg",
+    bookTitle: "A Escola Austríaca",
+    bookAuthor: "Jesus Huerta de Soto",
+    content:
+      "Este livro propõe explicar de uma forma sintética, mas com a necessária profundidade, o conteúdo essencial e as características diferenciadoras mais importantes da Escola Austríaca de Economia, relativamente ao paradigma que até agora tem dominado a economia. Analisa-se também a evolução do pensamento da Escola Austríaca desde as suas origens até o momento atual, indicando-se de que forma é previsível que as contribuições desta Escola possam tornar mais frutífera a evolução futura da Ciência Econômica. O interesse prioritário do autor consistiu em apresentar de uma forma atrativa o paradigma austríaco para toda uma série de potenciais leitores que, presumivelmente pouco familiarizados com o mesmo, possam a partir da sua leitura decidir-se pelo aprofundamento de uma abordagem que, quase com toda a certeza, será para eles tão inovadora como apaixonante.",
+    audio: "4QfZJP9uDWg",
+    filter: ["economia"],
+  },
+  {
+    link: "https://amzn.to/2J9fpMT",
+    image: "amentalidadeanticapitalista.jpg",
+    bookTitle: "A Mentalidade Anticapitalista",
+    bookAuthor: "Ludwig Von Mises",
+    content:
+      "A Mentalidade Anticapitalista é uma influente análise cultural, sociológica e psicológica de Ludwig von Mises acerca da rejeição ao livre mercado por uma parte significativa dos intelectuais. Em linguagem agradável, o autor discute com clareza e lucidez os principais elementos que caracterizam o capitalismo, o modo como este sistema é visto pelo homem comum, a literatura sob este modelo econômico e as principais objeções às sociedades capitalistas, além de abordar a questão do anticomunismo. A presente edição conta com uma apresentação bibliográfica do economista austríaco escrita por Ubiratan Jorge Iorio e Alex Catharino.",
+    audio: "wtrj5otsdLI",
+    filter: ["economia", "filosofia"],
+  },
+  {
+    link: "https://amzn.to/2J27UXM",
+    image: "desempregoepoliticamonetaria.jpg",
+    bookTitle: "Desemprego e Política Monetária",
+    bookAuthor: "F.A. Hayek",
+    content:
+      "Os pontos de vista do Professor Hayek e outros expositores da teoria austríaca das flutuações sempre representam uma genuína alternativa à macroeconomia ortodoxa. É trivial, porém correto, observar que o keynesianismo, tal como o conhecemos, está intelectualmente morto... Mas a teoria monetária terá ainda que redescobrir as contribuições especificas de Mises, Hayek e outros economistas austríacos para facilitar nossa compreensão das flutuações econômicas. Esses economistas representam toda uma tradição que, iniciando com Cantillon e passando pela economia política clássica, permanece até hoje ignorada. Desemprego e política monetária serve como uma excelente introdução ao estudo dessa tradição.",
+    audio: "ktaKZ4WinJk",
+    filter: ["economia", "filosofia"],
+  },
+  {
+    link: "https://amzn.to/2DyZ8Nh",
+    image: "acienciaeconomicaeometodoaustriaco.jpg",
+    bookTitle: "A Ciência Econômica e o Método Austríaco",
+    bookAuthor: "Hans-Hermann Hoppe",
+    content:
+      "A defesa definitiva das fundamentações metodológicas da Escola Austríaca de economia. Hoppe contrapõe o ponto de vista praxeológico — a economia enquanto uma ciência puramente dedutiva — ao positivismo, ao mesmo tempo em que aborda as críticas contrárias à posição austríaca. Hans-Hermann Hoppe apoia sua argumentação na ideia kantiana da proposição 'sintética a priori', expandindo assim o escopo da parte metodológica contida na obra Ação Humana de Mises. Hoppe é o metodologista mais proeminente da Escola Austríaca, e mostra aqui toda sua força. Ele combina uma explanação científica rigorosa com uma fenomenal e apaixonada retórica. Estas palestras deixaram os estudantes estupefatos quando foram apresentadas pela primeira vez na Mises University. Posteriormente foram transformadas nesta monografia, que desde então se tornou material essencial da pedagogia austríaca.",
+    audio: "xzp_TNoWWNc",
+    filter: ["economia", "filosofia"],
+  },
+  {
+    link: "https://amzn.to/2DEBHlO",
+    image: "dezlicoesfundamentaisdeeconomiaaustriaca.jpg",
+    bookTitle: "Dez Lições Fundamentais de Economia Austríaca",
+    bookAuthor: "Ubiratan Jorge Iorio",
+    content:
+      "A economia faz parte do cotidiano de todos, em ações como ir à padaria, ao cinema, sacar dinheiro no banco etc., porém seus conceitos são entendidos de forma correta por poucos e muitas vezes são distorcidos propositadamente por professores ideólogos. É exatamente com esse objetivo, o de ajudar você a entender a economia do dia a dia, de pensar nela de uma forma mais articulada, que o Instituto Ludwig von Mises Brasil pensou no curso Dez Lições Fundamentais de Economia Austríaca. Como o nome indica, são dez pequenas aulas sobre os temas mais relevantes da economia, redigidas de maneira a que quem não é economista possa ter acesso, de modo fácil e sem complicações, aos conhecimentos essenciais da Escola Austríaca de Economia, que vão com certeza auxiliá-lo a compreender o mundo econômico.",
+    audio: "_EK4ThSfsqI",
+    filter: ["economia"],
+  },
+  {
+    link: "https://amzn.to/2Pzg8rL",
+    image: "ocalculoeconomicosobosocialismo.jpg",
+    bookTitle: "O Cálculo Econômico Sob o Socialismo",
+    bookAuthor: "Ludwig Von Mises",
+    content:
+      "No presente livro, Mises analisa as alegações mais fundamentais do marxismo e expõe tal sistema econômico como ilógico e impraticável. Para o autor, o socialismo está destinado ao fracasso porque não oferece meios objetivos para se fazer qualquer cálculo econômico pois não permite um sistema de preços. Oferece excelente e breve argumentação para quem quer que deseje refutar intelectualmente os defensores do planejamento central e as utopias de “um outro mundo possível” sem a economia de mercado e a liberdade individual.",
+    audio: "vWjDeFGcDGg",
+    filter: ["economia"],
+  },
+  {
+    link: "https://amzn.to/2J10KD3",
+    image: "theinternetofmoney.jpg",
+    bookTitle: "The Internet of Money",
+    bookAuthor: "Andreas M. Antonopoulos",
+    content:
+      "While many books explain the how of bitcoin, The Internet of Money delves into the why of bitcoin. Acclaimed information-security expert and author of Mastering Bitcoin, Andreas M. Antonopoulos examines and contextualizes the significance of bitcoin through a series of essays spanning the exhilarating maturation of this technology. Bitcoin, a technological breakthrough quietly introduced to the world in 2008, is transforming much more than finance. Bitcoin is disrupting antiquated industries to bring financial independence to billions worldwide. In this book, Andreas explains why bitcoin is a financial and technological evolution with potential far exceeding the label “digital currency.” Andreas goes beyond exploring the technical functioning of the bitcoin network by illuminating bitcoin’s philosophical, social, and historical implications. As the internet has essentially transformed how people around the world interact and has permanently impacted our lives in ways we never could have imagined, bitcoin -- the internet of money -- is fundamentally changing our approach to solving social, political, and economic problems through decentralized technology.",
+    audio: "rc744Z9IjhY",
+    filter: ["tecnologia", "criptomoedas"],
+  },
+  {
+    link: "https://amzn.to/2PDGNna",
+    image: "acienciapolitica.jpg",
+    bookTitle: "A Ciência da Política",
+    bookAuthor: "Adriano Gianturco",
+    content:
+      "Todos têm suas opiniões sobre como a política deveria ser. Mas quase ninguém se preocupa em estudar como a política realmente funciona. É como prescrever um medicamento sem antes fazer o diagnóstico! Focar em como a política deveria ser é o papel da Filosofia Política. A Ciência Política, ao contrário, foca em como a política é de fato, para só depois, eventualmente, fazer prescrições. É essa a intenção deste manual. Aqui você irá aprender Ciência Política, a fazer o diagnóstico; irá aprender que o Estado surge como Bandido Estacionário; que os impostos não existem para dar serviços, mas porque são um tributo imposto pelo vencedor à vítima; que existe um nível ótimo de tributos (Curva de Laffer), mas que estamos além dele por motivos políticos; que lobismo e corrupção ocorrem por causa de Rentseeking e Renda Política; que a regulamentação surge por causa de Captura, Bootleggers and Baptists e Money for Nothing; que o orçamento tende sempre a estourar pelos Custos Difusos & Benefícios Concentrados e pelo Dilema do Jantar; que todos os sistemas eleitorais são imperfeitos, que as campanhas eleitorais são muito bem planejadas por meio da Definição da Agenda e do Political Business Cycle; que seu voto tem pouquíssimas chances de mudar o resultado; que as eleições são decididas pelo Teorema do Eleitor Mediano, pelo Win-Set e pela Vantagem do Incumbente; que as minorias organizadas tendem a ganhar perante a maioria desorganizada; que movimentos sociais e revoluções tendem a frear seus ímpetos, a se hierarquizar pela Lei de Ferro da Oligarquia, e que as elites tendem a se manter no poder; que troca de favores para passar um projeto de lei não é uma anomalia, mas uma necessidade chamada Logrolling; que existe até uma 'fórmula matemática' para formar governos de coalizão; que estudar política não é 'achismo', mas uma ciência.",
+    audio: "VKvdbhyFqg0",
+    filter: ["politica"],
+  },
+];
+
+export default Books;
