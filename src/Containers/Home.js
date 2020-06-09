@@ -1,12 +1,14 @@
-import React from "react";
 import { Box, Container, Grid, Typography } from "@material-ui/core";
-import News from "./../Components/News";
 import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import libertarians from "./../Data/Libertarians";
-import books from "./../Data/Books";
-import Libertarian from "./../Components/Libertarian";
+
 import Book from "./../Components/Book";
+import Libertarian from "./../Components/Libertarian";
+import News from "./../Components/News";
+import books from "./../Data/Books";
+import libertarians from "./../Data/Libertarians";
+
 var _ = require("lodash");
 
 const useStyles = makeStyles((theme) => ({
@@ -44,42 +46,50 @@ export default function Home() {
     <Box overflow="hidden" className={classes.root}>
       <Container maxWidth="lg">
         <Grid container spacing={2} style={{ padding: "10px 30px 30px" }}>
-          <Grid item xs={12} sm={8} md={8}>
+          <Grid item xs={12} sm={12} md={8}>
             <NavLink to="/quiz">
               <img src="./img/banner-imposto-roubo.png" alt="Quiz" />
             </NavLink>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
-            <a
-              href="https://www.bitcoinpricemap.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./img/banner-bitcoinpricemap2.png"
-                alt="Bitcoin Price Map"
-              />
-            </a>
-            <a
-              href="https://www.bitcoinhodler.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./img/banner-bitcoinhodler.png"
-                alt="Bitcoin Price Map"
-              />
-            </a>
-            <a
-              href="https://chrome.google.com/webstore/detail/vis%C3%A3o-libert%C3%A1ria/jnafjgekhpiipmhihkmoboggpclkdijl?hl=pt-BR"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./img/banner-visaolibertaria2.png"
-                alt="Extensão Visão Libertária"
-              />
-            </a>
+          <Grid item xs={12} sm={12} md={4}>
+            <Grid container>
+              <Grid item xs={12} sm={4} md={12}>
+                <a
+                  href="https://www.bitcoinpricemap.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./img/banner-bitcoinpricemap2.png"
+                    alt="Bitcoin Price Map"
+                  />
+                </a>
+              </Grid>
+              <Grid item xs={12} sm={4} md={12}>
+                <a
+                  href="https://www.bitcoinhodler.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./img/banner-bitcoinhodler.png"
+                    alt="Bitcoin Price Map"
+                  />
+                </a>
+              </Grid>
+              <Grid item xs={12} sm={4} md={12}>
+                <a
+                  href="https://chrome.google.com/webstore/detail/vis%C3%A3o-libert%C3%A1ria/jnafjgekhpiipmhihkmoboggpclkdijl?hl=pt-BR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./img/banner-visaolibertaria2.png"
+                    alt="Extensão Visão Libertária"
+                  />
+                </a>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
         <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>

@@ -1,4 +1,4 @@
-import { Container, Grid, Typography, Button } from "@material-ui/core";
+import { Button, Container, Grid, Typography } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormGroup from "@material-ui/core/FormGroup";
@@ -182,23 +182,27 @@ export default function LibertariansContainer(props) {
             </div>
           </Modal>
           <Grid item xs={12} className={classes.filters}>
-            <FormGroup row>
-              {libertariansFilters.map((f) => (
-                <FormControlLabel
-                  className={classes.filterOption}
-                  control={
-                    <PurpleSwitch
-                      checked={selectedFilters.includes(f)}
-                      onChange={handleChange(f)}
-                      value={f}
-                      color="secondary"
+            <Grid container>
+              <FormGroup row>
+                {libertariansFilters.map((f) => (
+                  <Grid item xs={12} sm={4} md={3} lg={2}>
+                    <FormControlLabel
+                      className={classes.filterOption}
+                      control={
+                        <PurpleSwitch
+                          checked={selectedFilters.includes(f)}
+                          onChange={handleChange(f)}
+                          value={f}
+                          color="secondary"
+                        />
+                      }
+                      label={f}
+                      key={f}
                     />
-                  }
-                  label={f}
-                  key={f}
-                />
-              ))}
-            </FormGroup>
+                  </Grid>
+                ))}
+              </FormGroup>
+            </Grid>
           </Grid>
           {libertarians
             .filter(
@@ -212,7 +216,7 @@ export default function LibertariansContainer(props) {
                   key={index}
                   item
                   xs={12}
-                  sm={6}
+                  sm={4}
                   md={3}
                   style={{ padding: "10px 5px" }}
                   onClick={() => {

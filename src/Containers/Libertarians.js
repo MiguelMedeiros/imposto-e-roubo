@@ -1,12 +1,13 @@
-import React from "react";
-import libertarians from "./../Data/Libertarians";
+import { Container, Grid, Typography } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
-import Libertarian from "./../Components/Libertarian";
-import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import { Container, Typography, Grid } from "@material-ui/core";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import FormGroup from "@material-ui/core/FormGroup";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Switch from "@material-ui/core/Switch";
+import React from "react";
+
+import Libertarian from "./../Components/Libertarian";
+import libertarians from "./../Data/Libertarians";
 
 const useStyles = makeStyles((theme) => ({
   filters: {
@@ -72,23 +73,27 @@ export default function LibertariansContainer(props) {
             <Typography variant="h1">Canais Libertários</Typography>
           </Grid>
           <Grid item xs={12} className={classes.filters}>
-            <FormGroup row>
-              {libertariansFilters.map((f) => (
-                <FormControlLabel
-                  className={classes.filterOption}
-                  control={
-                    <PurpleSwitch
-                      checked={selectedFilters.includes(f)}
-                      onChange={handleChange(f)}
-                      value={f}
-                      color="secondary"
+            <Grid container>
+              <FormGroup row>
+                {libertariansFilters.map((f) => (
+                  <Grid item xs={12} sm={4} md={3} lg={2}>
+                    <FormControlLabel
+                      className={classes.filterOption}
+                      control={
+                        <PurpleSwitch
+                          checked={selectedFilters.includes(f)}
+                          onChange={handleChange(f)}
+                          value={f}
+                          color="secondary"
+                        />
+                      }
+                      label={f}
+                      key={f}
                     />
-                  }
-                  label={f}
-                  key={f}
-                />
-              ))}
-            </FormGroup>
+                  </Grid>
+                ))}
+              </FormGroup>
+            </Grid>
           </Grid>
           {libertarians
             .filter(

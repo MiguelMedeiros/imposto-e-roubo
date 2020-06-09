@@ -32,6 +32,7 @@ let theme = createMuiTheme({
         fontFamily: "Saira Stencil One",
         fontSize: 45,
         marginBottom: 10,
+        paddingLeft: 5,
       },
       h2: {
         color: "#f9f9f9",

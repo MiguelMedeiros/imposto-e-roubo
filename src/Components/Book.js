@@ -18,19 +18,12 @@ const useStyles = makeStyles((theme) => ({
         color: "#f3c011 !important",
       },
     },
-  },
-  image: {
-    height: 360,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    width: "100%",
-    transition: "50ms all ease-out",
-    [theme.breakpoints.up("md")]: {
-      height: 400,
-    },
-    "&:hover": {
-      transform: "scale(1.05)",
+    "& img": {
+      width: "100%",
+      transition: "50ms all ease-out",
+      "&:hover": {
+        transform: "scale(1.05)",
+      },
     },
   },
   name: {
@@ -54,12 +47,7 @@ function Liberterian({ link, image, name, filter, author }) {
   const classes = useStyles();
   return (
     <Box className={classes.avatar}>
-      <div
-        className={classes.image}
-        style={{
-          backgroundImage: `url('/img/${image}')`,
-        }}
-      ></div>
+      <img src={`/img/${image}`} alt={name} />
       <div className={classes.name}>{name}</div>
       <div className={classes.author}>{author}</div>
       <div className={classes.filters}>{filter.join(", ")}</div>

@@ -161,7 +161,6 @@ export default function News(props) {
                       display: "block",
                     }}
                   >
-                    {modalVideo.Authors.Authored.Name} -{" "}
                     {modalVideo.Authors.Date}
                   </Typography>
                   <div className={classes.iframeContainer}>
@@ -221,7 +220,7 @@ export default function News(props) {
                     }}
                   >
                     <Typography variant="caption" style={{ color: "#ccc" }}>
-                      {item.Authors.Authored.Name} - {item.Authors.Date}
+                      {item.Authors.Date}
                     </Typography>
                     <Typography
                       gutterBottom
