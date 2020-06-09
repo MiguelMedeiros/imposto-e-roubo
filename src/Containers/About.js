@@ -33,6 +33,14 @@ const useStyles = makeStyles((theme) => ({
   link: {
     fontWeight: "bold",
   },
+  linksGithub: {
+    textAlign: "center",
+    "& span": {
+      display: "inline-block",
+      margin: "auto 0px",
+      padding: "10px 5px",
+    },
+  },
   list: {
     textAlign: "center",
     listStyle: "none",
@@ -71,6 +79,36 @@ export default function About() {
             livros. Fora a integração com o site Visão Libertária para ter
             notícias sempre quentinhas sob a ótica libertária.
           </Typography>
+          <hr className={classes.divider} />
+          <Typography variant="h2" style={{ fontSize: 30 }}>
+            Contribua com código
+          </Typography>
+          <Typography paragraph>
+            Se você quiser ajudar na programação, segue os links do repositório
+            no Github:
+          </Typography>
+          <div className={classes.linksGithub}>
+            <a
+              class="github-button"
+              href="https://github.com/MiguelMedeiros/imposto-e-roubo"
+              data-icon="octicon-star"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star MiguelMedeiros/imposto-e-roubo on GitHub"
+            >
+              Star
+            </a>
+            <a
+              class="github-button"
+              href="https://github.com/MiguelMedeiros/imposto-e-roubo/fork"
+              data-icon="octicon-repo-forked"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Fork MiguelMedeiros/imposto-e-roubo on GitHub"
+            >
+              Fork
+            </a>
+          </div>
           <hr className={classes.divider} />
         </Grid>
         <Grid item xs={12} sm={6}>
