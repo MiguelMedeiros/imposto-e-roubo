@@ -1,3 +1,4 @@
+import { Container } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
@@ -47,6 +48,11 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     color: theme.palette.secondary.main,
     textDecoration: "none",
+    fontSize: 22,
+    fontFamily: "Saira Stencil One",
+    [theme.breakpoints.up(600)]: {
+      fontSize: 26,
+    },
   },
   menuMobile: {
     display: "inline",
@@ -77,105 +83,109 @@ export default function Header() {
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            <NavLink to="/" className={classes.logo}>
-              Imposto é Roubo
-            </NavLink>
-          </Typography>
+        <Container maxWidth="lg" style={{ padding: "0px 5px" }}>
+          <Toolbar>
+            <Typography variant="h6" className={classes.title}>
+              <NavLink to="/" className={classes.logo}>
+                Imposto é Roubo
+              </NavLink>
+            </Typography>
 
-          <IconButton
-            aria-label="more"
-            aria-controls="long-menu"
-            aria-haspopup="true"
-            onClick={handleClick}
-            className={classes.menuMobile}
-          >
-            <MoreVertIcon />
-          </IconButton>
-          <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            <NavLink to="/sobre" className={classes.menuMobileItem}>
-              <MenuItem selected={location.pathname === "/sobre"}>
-                Sobre
-              </MenuItem>
-            </NavLink>
-            <NavLink to="/quiz" className={classes.menuMobileItem}>
-              <MenuItem selected={location.pathname === "/quiz"}>Quiz</MenuItem>
-            </NavLink>
+            <IconButton
+              aria-label="more"
+              aria-controls="long-menu"
+              aria-haspopup="true"
+              onClick={handleClick}
+              className={classes.menuMobile}
+            >
+              <MoreVertIcon />
+            </IconButton>
+            <Menu
+              id="simple-menu"
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              <NavLink to="/sobre" className={classes.menuMobileItem}>
+                <MenuItem selected={location.pathname === "/sobre"}>
+                  Sobre
+                </MenuItem>
+              </NavLink>
+              <NavLink to="/quiz" className={classes.menuMobileItem}>
+                <MenuItem selected={location.pathname === "/quiz"}>
+                  Quiz
+                </MenuItem>
+              </NavLink>
 
-            <NavLink to="/noticias" className={classes.menuMobileItem}>
-              <MenuItem selected={location.pathname === "/noticias"}>
-                Notícias
-              </MenuItem>
+              <NavLink to="/noticias" className={classes.menuMobileItem}>
+                <MenuItem selected={location.pathname === "/noticias"}>
+                  Notícias
+                </MenuItem>
+              </NavLink>
+              <NavLink to="/libertarios" className={classes.menuMobileItem}>
+                <MenuItem selected={location.pathname === "/libertarios"}>
+                  Libertários
+                </MenuItem>
+              </NavLink>
+              <NavLink to="/biblioteca" className={classes.menuMobileItem}>
+                <MenuItem selected={location.pathname === "/biblioteca"}>
+                  Biblioteca
+                </MenuItem>
+              </NavLink>
+            </Menu>
+            <NavLink
+              to="/sobre"
+              className={
+                location.pathname === "/sobre"
+                  ? `${classes.activeButton}`
+                  : `${classes.menuButton}`
+              }
+            >
+              <Button color="inherit">Sobre</Button>
             </NavLink>
-            <NavLink to="/libertarios" className={classes.menuMobileItem}>
-              <MenuItem selected={location.pathname === "/libertarios"}>
-                Libertários
-              </MenuItem>
+            <NavLink
+              to="/quiz"
+              className={
+                location.pathname === "/quiz"
+                  ? `${classes.activeButton}`
+                  : `${classes.menuButton}`
+              }
+            >
+              <Button color="inherit">Quiz</Button>
             </NavLink>
-            <NavLink to="/biblioteca" className={classes.menuMobileItem}>
-              <MenuItem selected={location.pathname === "/biblioteca"}>
-                Biblioteca
-              </MenuItem>
+            <NavLink
+              to="/noticias"
+              className={
+                location.pathname === "/noticias"
+                  ? `${classes.activeButton}`
+                  : `${classes.menuButton}`
+              }
+            >
+              <Button color="inherit">Notícias</Button>
             </NavLink>
-          </Menu>
-          <NavLink
-            to="/sobre"
-            className={
-              location.pathname === "/sobre"
-                ? `${classes.activeButton}`
-                : `${classes.menuButton}`
-            }
-          >
-            <Button color="inherit">Sobre</Button>
-          </NavLink>
-          <NavLink
-            to="/quiz"
-            className={
-              location.pathname === "/quiz"
-                ? `${classes.activeButton}`
-                : `${classes.menuButton}`
-            }
-          >
-            <Button color="inherit">Quiz</Button>
-          </NavLink>
-          <NavLink
-            to="/noticias"
-            className={
-              location.pathname === "/noticias"
-                ? `${classes.activeButton}`
-                : `${classes.menuButton}`
-            }
-          >
-            <Button color="inherit">Notícias</Button>
-          </NavLink>
-          <NavLink
-            to="/libertarios"
-            className={
-              location.pathname === "/libertarios"
-                ? `${classes.activeButton}`
-                : `${classes.menuButton}`
-            }
-          >
-            <Button color="inherit">Libertários</Button>
-          </NavLink>
-          <NavLink
-            to="/biblioteca"
-            className={
-              location.pathname === "/biblioteca"
-                ? `${classes.activeButton}`
-                : `${classes.menuButton}`
-            }
-          >
-            <Button color="inherit">Biblioteca</Button>
-          </NavLink>
-        </Toolbar>
+            <NavLink
+              to="/libertarios"
+              className={
+                location.pathname === "/libertarios"
+                  ? `${classes.activeButton}`
+                  : `${classes.menuButton}`
+              }
+            >
+              <Button color="inherit">Libertários</Button>
+            </NavLink>
+            <NavLink
+              to="/biblioteca"
+              className={
+                location.pathname === "/biblioteca"
+                  ? `${classes.activeButton}`
+                  : `${classes.menuButton}`
+              }
+            >
+              <Button color="inherit">Biblioteca</Button>
+            </NavLink>
+          </Toolbar>
+        </Container>
       </AppBar>
     </div>
   );

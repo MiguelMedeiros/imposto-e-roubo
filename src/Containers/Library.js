@@ -185,7 +185,7 @@ export default function LibertariansContainer(props) {
             <Grid container>
               <FormGroup row>
                 {libertariansFilters.map((f) => (
-                  <Grid item xs={12} sm={4} md={3} lg={2}>
+                  <Grid item xs={12} sm={4} md={3} lg={2} key={f}>
                     <FormControlLabel
                       className={classes.filterOption}
                       control={
@@ -197,7 +197,6 @@ export default function LibertariansContainer(props) {
                         />
                       }
                       label={f}
-                      key={f}
                     />
                   </Grid>
                 ))}
