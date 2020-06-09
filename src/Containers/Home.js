@@ -136,7 +136,8 @@ export default function Home() {
             })}
           </Grid>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>
+          <Typography variant="h1">Notícias</Typography>
           <News />
         </Grid>
       </Container>

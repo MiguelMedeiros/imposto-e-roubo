@@ -126,7 +126,7 @@ export default function LibertariansContainer(props) {
       <Container maxWidth="lg">
         <Grid container spacing={0} direction="row">
           <Grid item xs={12}>
-            <Typography variant="h1">Bibliteca Libertária</Typography>
+            <Typography variant="h1">Bibliteca</Typography>
           </Grid>
           <Modal
             open={open}

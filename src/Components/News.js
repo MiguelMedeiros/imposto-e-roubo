@@ -127,12 +127,9 @@ export default function News(props) {
   };
 
   return (
-    <Container maxWidth="lg">
-      <div style={{ margin: "auto" }}>
-        <Grid container spacing={0} direction="row">
-          <Grid item xs={12}>
-            <Typography variant="h1">Notícias</Typography>
-          </Grid>
+    <Container style={{ padding: "0" }}>
+      <div>
+        <Grid container direction="row">
           <Modal
             open={open}
             onClose={handleClose}

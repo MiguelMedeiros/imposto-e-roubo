@@ -70,7 +70,7 @@ export default function LibertariansContainer(props) {
       <Container maxWidth="lg">
         <Grid container spacing={0} direction="row">
           <Grid item xs={12}>
-            <Typography variant="h1">Canais Libertários</Typography>
+            <Typography variant="h1">Libertários</Typography>
           </Grid>
           <Grid item xs={12} className={classes.filters}>
             <Grid container>
