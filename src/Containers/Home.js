@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Modal from "@material-ui/core/Modal";
 
@@ -76,18 +76,31 @@ const useStyles = makeStyles((theme) => ({
       outline: "none !important",
     },
   },
+  titleLink: {
+    textDecoration: "none",
+    color: "#f0f0f0",
+    "& h1": {
+      "&:hover": {
+        color: "#f3c011",
+      },
+    },
+  },
 }));
 
 export default function Home() {
   const classes = useStyles();
   const [modalBook, setModalBook] = useState(null);
   const [open, setOpen] = useState(false);
+  const [shuffleBooks, setShuffleBooks] = useState([]);
+  const [shuffleLibertarians, setShuffleLibertarians] = useState([]);
 
-  const shuffleBooks = _.shuffle(books);
-  const slicedBooks = _.slice(shuffleBooks, 0, 4);
+  useEffect(() => {
+    let shuffleBooksTemp = _.shuffle(books);
+    setShuffleBooks(_.slice(shuffleBooksTemp, 0, 4));
 
-  const shuffleLibertarians = _.shuffle(libertarians);
-  const slicedLibertarians = _.slice(shuffleLibertarians, 0, 6);
+    let shuffleLibertariansTemp = _.shuffle(libertarians);
+    setShuffleLibertarians(_.slice(shuffleLibertariansTemp, 0, 6));
+  }, []);
 
   const handleOpen = (book) => {
     setModalBook(book);
@@ -201,9 +214,11 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>
-          <Typography variant="h1">Biblioteca</Typography>
+          <NavLink to={"/biblioteca"} className={classes.titleLink}>
+            <Typography variant="h1">Biblioteca</Typography>
+          </NavLink>
           <Grid container>
-            {slicedBooks.map((book, index) => {
+            {shuffleBooks.map((book, index) => {
               return (
                 <Grid
                   item
@@ -230,9 +245,11 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>
-          <Typography variant="h1">Libertários</Typography>
+          <NavLink to={"/libertarios"} className={classes.titleLink}>
+            <Typography variant="h1">Libertários</Typography>
+          </NavLink>
           <Grid container>
-            {slicedLibertarians.map((person, index) => {
+            {shuffleLibertarians.map((person, index) => {
               return (
                 <Grid item xs={6} sm={4} md={2} key={index}>
                   <Libertarian
@@ -248,7 +265,9 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>
-          <Typography variant="h1">Notícias</Typography>
+          <NavLink to={"/noticias"} className={classes.titleLink}>
+            <Typography variant="h1">Notícias</Typography>
+          </NavLink>
           <News />
         </Grid>
       </Container>
