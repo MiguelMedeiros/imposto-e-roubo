@@ -1,7 +1,8 @@
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Container, Grid, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Modal from "@material-ui/core/Modal";
 
 import Book from "./../Components/Book";
 import Libertarian from "./../Components/Libertarian";
@@ -31,10 +32,56 @@ const useStyles = makeStyles((theme) => ({
     width: 125,
     padding: 0,
   },
+  iframeContainer: {
+    height: "57vh",
+  },
+  youtubeEmbed: {
+    maxWidth: "100%",
+    width: "100%",
+    height: "100%",
+  },
+  modal: {
+    top: "50%",
+    left: 0,
+    margin: "10px",
+    width: "100%",
+    transform: `translate(0%, -50%)`,
+    [theme.breakpoints.up("sm")]: {
+      transform: `translate(-50%, -50%)`,
+      top: `50%`,
+      left: `50%`,
+      width: 600,
+    },
+    [theme.breakpoints.up("md")]: {
+      width: 1200,
+      height: "70vh",
+    },
+  },
+  videoContainer: {
+    transition: "all 100ms",
+    "&:hover": {
+      transform: "scale(1.04)",
+    },
+  },
+  paper: {
+    position: "absolute",
+    backgroundColor: "#212121",
+    boxShadow: theme.shadows[5],
+    border: "none !important",
+    color: "#f0f0f0",
+    padding: theme.spacing(4),
+    borderRadius: 4,
+    outline: "none !important",
+    "&:active": {
+      outline: "none !important",
+    },
+  },
 }));
 
 export default function Home() {
   const classes = useStyles();
+  const [modalBook, setModalBook] = useState(null);
+  const [open, setOpen] = useState(false);
 
   const shuffleBooks = _.shuffle(books);
   const slicedBooks = _.slice(shuffleBooks, 0, 4);
@@ -42,8 +89,69 @@ export default function Home() {
   const shuffleLibertarians = _.shuffle(libertarians);
   const slicedLibertarians = _.slice(shuffleLibertarians, 0, 6);
 
+  const handleOpen = (book) => {
+    setModalBook(book);
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Box overflow="hidden" className={classes.root}>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <div className={`${classes.paper} ${classes.modal}`}>
+          {modalBook && (
+            <>
+              <Typography
+                variant="h2"
+                style={{
+                  marginBottom: 5,
+                  fontSize: 20,
+                  display: "block",
+                  fontWeight: "bold",
+                }}
+              >
+                {modalBook.bookTitle}
+              </Typography>
+              <Typography
+                variant="caption"
+                style={{
+                  color: "#ccc",
+                  marginBottom: 15,
+                  display: "block",
+                }}
+              >
+                {modalBook.bookAuthor}
+              </Typography>
+              <Button
+                variant="contained"
+                href={modalBook.link}
+                style={{ margin: "5px auto 15px" }}
+                color="secondary"
+              >
+                Comprar Livro
+              </Button>
+              <div className={classes.iframeContainer}>
+                <iframe
+                  title={modalBook.Title}
+                  src={`https://www.youtube.com/embed/${modalBook.audio}?autoplay=1`}
+                  height="90%"
+                  width="100%"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </>
+          )}
+        </div>
+      </Modal>
       <Container maxWidth="lg">
         <Grid container spacing={2} style={{ padding: "10px 30px 30px" }}>
           <Grid item xs={12} sm={12} md={8}>
@@ -104,6 +212,9 @@ export default function Home() {
                   md={3}
                   key={index}
                   style={{ padding: "10px 5px" }}
+                  onClick={() => {
+                    handleOpen(book);
+                  }}
                 >
                   <Book
                     key={index}
