@@ -18,7 +18,7 @@ export default function NewsContainer() {
           >
             <img
               style={{ width: "100%", margin: "0px auto 20px", maxWidth: 720 }}
-              src="/img/banner-visaolibertaria-grande.png"
+              src="/img/banners/banner-visaolibertaria-grande.png"
               alt="Extensão Visão Libertária"
             />
           </a>

@@ -123,7 +123,7 @@ export default function About() {
         </Grid>
         <Grid item xs={12} sm={6} className={classes.authorLinks}>
           <img
-            src="./img/miguelmedeiros.jpg"
+            src="./img/libertarians/miguelmedeiros.jpg"
             alt="Miguel Medeiros"
             className={classes.imgAuthor}
           />

@@ -168,7 +168,7 @@ export default function Home() {
         <Grid container spacing={2} style={{ padding: "10px 30px 30px" }}>
           <Grid item xs={12} sm={12} md={8}>
             <NavLink to="/quiz">
-              <img src="./img/banner-imposto-roubo.png" alt="Quiz" />
+              <img src="./img/banners/banner-imposto-roubo.png" alt="Quiz" />
             </NavLink>
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
@@ -180,7 +180,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="./img/banner-bitcoinpricemap2.png"
+                    src="./img/banners/banner-bitcoinpricemap2.png"
                     alt="Bitcoin Price Map"
                   />
                 </a>
@@ -192,7 +192,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="./img/banner-bitcoinhodler.png"
+                    src="./img/banners/banner-bitcoinhodler.png"
                     alt="Bitcoin Price Map"
                   />
                 </a>
@@ -204,7 +204,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="./img/banner-visaolibertaria2.png"
+                    src="./img/banners/banner-visaolibertaria2.png"
                     alt="Extensão Visão Libertária"
                   />
                 </a>

@@ -1,7 +1,7 @@
 const Books = [
   {
     link: "https://amzn.to/2DBo9HQ",
-    image: "acaohumana.png",
+    image: "books/acaohumana.png",
     bookTitle: "Ação Humana",
     bookAuthor: "Ludwig Von Mises",
     content:
@@ -11,7 +11,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2VxpYQg",
-    image: "caminhodaservidao.jpg",
+    image: "books/caminhodaservidao.jpg",
     bookTitle: "O Caminho da Servidão",
     bookAuthor: "F.A. Hayek",
     content:
@@ -21,7 +21,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2GQcpTO",
-    image: "anatomiadoestado.jpg",
+    image: "books/anatomiadoestado.jpg",
     bookTitle: "Anatomia do Estado",
     bookAuthor: "Murray N. Rothbard",
     content:
@@ -31,7 +31,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2DBnoi0",
-    image: "asseislicoes.jpg",
+    image: "books/asseislicoes.jpg",
     bookTitle: "As Seis Lições",
     bookAuthor: "Ludwig Von Mises",
     content:
@@ -41,7 +41,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2IYRDCY",
-    image: "alei.jpg",
+    image: "books/alei.jpg",
     bookTitle: "A Lei",
     bookAuthor: "Claude Frederic Bastiat",
     content:
@@ -51,7 +51,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2DE2rmz",
-    image: "bitcoinamoedanaeradigital.jpg",
+    image: "books/bitcoinamoedanaeradigital.jpg",
     bookTitle: "Bitcoin. A Moeda na Era Digital",
     bookAuthor: "Fernando Ulrich",
     content:
@@ -61,7 +61,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2ZGzAYd",
-    image: "materingbitcoin.jpg",
+    image: "books/materingbitcoin.jpg",
     bookTitle: "Mastering Bitcoin",
     bookAuthor: "Andreas Antonopoulos",
     content:
@@ -71,7 +71,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2LbtgVu",
-    image: "thebitcoinstandard.jpg",
+    image: "books/thebitcoinstandard.jpg",
     bookTitle: "The Bitcoin Standard",
     bookAuthor: "Saifedean Ammous",
     content:
@@ -81,7 +81,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2GQeFdK",
-    image: "democraciaodeusquefalhou.jpg",
+    image: "books/democraciaodeusquefalhou.jpg",
     bookTitle: "Democracia. O Deus que Falhou",
     bookAuthor: "Hans-Hermann Hoppe",
     content:
@@ -91,7 +91,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2GF6fol",
-    image: "oqueogovernofezcomonossodinheiro.jpg",
+    image: "books/oqueogovernofezcomonossodinheiro.jpg",
     bookTitle: "O que o Governo Fez com o Nosso Dinheiro?",
     bookAuthor: "Murray N. Rothbard",
     content:
@@ -101,7 +101,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2GQ5aLO",
-    image: "aeticadaliberdade.jpg",
+    image: "books/aeticadaliberdade.jpg",
     bookTitle: "A Ética da Liberdade",
     bookAuthor: "Murray N. Rothbard",
     content:
@@ -111,7 +111,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2UZ1AYp",
-    image: "porumanovaliberdade.jpg",
+    image: "books/porumanovaliberdade.jpg",
     bookTitle: "Por Uma Nova Liberdade: o Manifesto Libertário",
     bookAuthor: "Murray N. Rothbard",
     content:
@@ -121,7 +121,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2GOlyfA",
-    image: "educacaolivre.jpg",
+    image: "books/educacaolivre.jpg",
     bookTitle: "Educação. Livre e Obrigatória",
     bookAuthor: "Murray N. Rothbard",
     content:
@@ -131,7 +131,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2GGgcBP",
-    image: "umateoriadosocialismo.jpg",
+    image: "books/umateoriadosocialismo.jpg",
     bookTitle: "Uma Teoria do Socialismo e do Capitalismo",
     bookAuthor: "Hans-Hermann Hoppe",
     content:
@@ -141,7 +141,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2V0Wf2T",
-    image: "contrapropriedadeintelectual.jpg",
+    image: "books/contrapropriedadeintelectual.jpg",
     bookTitle: "Contra a Propriedade Intelectual",
     bookAuthor: "N. Stephan Kinsella",
     content:
@@ -151,7 +151,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2J3rLpx",
-    image: "liberalismo.jpg",
+    image: "books/liberalismo.jpg",
     bookTitle: "Liberalismo",
     bookAuthor: "Ludwig Von Mises",
     content:
@@ -161,7 +161,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2GFaT5L",
-    image: "umabrevehistoriadohomem.jpg",
+    image: "books/umabrevehistoriadohomem.jpg",
     bookTitle: "Uma Breve História do Homem. Progresso e Declínio",
     bookAuthor: "Hans-Hermann Hoppe",
     content:
@@ -171,7 +171,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2J3s7wn",
-    image: "oquedeveserfeito.jpg",
+    image: "books/oquedeveserfeito.jpg",
     bookTitle: "O que Deve Ser Feito",
     bookAuthor: "Hans-Hermann Hoppe",
     content:
@@ -181,7 +181,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2XUtRfQ",
-    image: "aescolaaustriaca.jpg",
+    image: "books/aescolaaustriaca.jpg",
     bookTitle: "A Escola Austríaca",
     bookAuthor: "Jesus Huerta de Soto",
     content:
@@ -191,7 +191,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2J9fpMT",
-    image: "amentalidadeanticapitalista.jpg",
+    image: "books/amentalidadeanticapitalista.jpg",
     bookTitle: "A Mentalidade Anticapitalista",
     bookAuthor: "Ludwig Von Mises",
     content:
@@ -201,7 +201,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2J27UXM",
-    image: "desempregoepoliticamonetaria.jpg",
+    image: "books/desempregoepoliticamonetaria.jpg",
     bookTitle: "Desemprego e Política Monetária",
     bookAuthor: "F.A. Hayek",
     content:
@@ -211,7 +211,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2DyZ8Nh",
-    image: "acienciaeconomicaeometodoaustriaco.jpg",
+    image: "books/acienciaeconomicaeometodoaustriaco.jpg",
     bookTitle: "A Ciência Econômica e o Método Austríaco",
     bookAuthor: "Hans-Hermann Hoppe",
     content:
@@ -221,7 +221,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2DEBHlO",
-    image: "dezlicoesfundamentaisdeeconomiaaustriaca.jpg",
+    image: "books/dezlicoesfundamentaisdeeconomiaaustriaca.jpg",
     bookTitle: "Dez Lições Fundamentais de Economia Austríaca",
     bookAuthor: "Ubiratan Jorge Iorio",
     content:
@@ -231,7 +231,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2Pzg8rL",
-    image: "ocalculoeconomicosobosocialismo.jpg",
+    image: "books/ocalculoeconomicosobosocialismo.jpg",
     bookTitle: "O Cálculo Econômico Sob o Socialismo",
     bookAuthor: "Ludwig Von Mises",
     content:
@@ -241,7 +241,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2J10KD3",
-    image: "theinternetofmoney.jpg",
+    image: "books/theinternetofmoney.jpg",
     bookTitle: "The Internet of Money",
     bookAuthor: "Andreas M. Antonopoulos",
     content:
@@ -251,7 +251,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/2PDGNna",
-    image: "acienciapolitica.jpg",
+    image: "books/acienciapolitica.jpg",
     bookTitle: "A Ciência da Política",
     bookAuthor: "Adriano Gianturco",
     content:

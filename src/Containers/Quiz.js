@@ -52,7 +52,7 @@ export default function Quiz() {
         <div className={classes.stage}>
           <Typography variant="h1">Mas afinal: imposto é roubo?</Typography>
           <img
-            src="/img/batman.gif"
+            src="/img/quiz/batman.gif"
             alt="Pare para pensar você acha que imposto é roubo?"
             className={classes.image}
           />
@@ -75,7 +75,7 @@ export default function Quiz() {
         <div className={classes.stage}>
           <Typography variant="h1">Você paga por que quer?</Typography>
           <img
-            src="/img/breakingbad.gif"
+            src="/img/quiz/breakingbad.gif"
             alt="Você paga por que quer?"
             className={classes.image}
           />
@@ -111,7 +111,7 @@ export default function Quiz() {
             Você pode deixar de pagar por algum motivo?
           </Typography>
           <img
-            src="/img/cat.gif"
+            src="/img/quiz/cat.gif"
             alt="Você pode deixar de pagar por algum motivo?"
             className={classes.image}
           />
@@ -148,7 +148,7 @@ export default function Quiz() {
             seu trabalho?
           </Typography>
           <img
-            src="/img/jail.gif"
+            src="/img/quiz/jail.gif"
             alt="Você vai preso se deixar de pagar ou perderá algum bem adquirido
               com seu trabalho?"
             className={classes.image}
@@ -191,7 +191,7 @@ export default function Quiz() {
             className="navlink"
           >
             <img
-              src="/img/lei-4729.jpg"
+              src="/img/quiz/lei-4729.jpg"
               alt="Mas e a lei Nº 4729 que está em vigor desde 14/07/1965?"
               className="image image-zoom"
             />
