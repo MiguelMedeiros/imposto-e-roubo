@@ -53,8 +53,7 @@ const useStyles = makeStyles((theme) => ({
       width: 600,
     },
     [theme.breakpoints.up("md")]: {
-      width: 1200,
-      height: "70vh",
+      width: 800,
     },
   },
   videoContainer: {

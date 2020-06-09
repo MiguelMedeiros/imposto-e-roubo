@@ -1,6 +1,6 @@
 {
   "name": "imposto-e-roubo",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",

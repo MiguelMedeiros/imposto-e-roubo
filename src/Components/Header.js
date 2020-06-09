@@ -11,6 +11,10 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
+import { Tooltip } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -45,6 +49,15 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "uppercase",
     textDecoration: "none",
   },
+  linkGithub: {
+    marginLeft: 20,
+    fontSize: 26,
+    color: "#f0f0f0",
+    display: "none",
+    [theme.breakpoints.up(870)]: {
+      display: "inline",
+    },
+  },
   logo: {
     color: theme.palette.secondary.main,
     textDecoration: "none",
@@ -63,8 +76,10 @@ const useStyles = makeStyles((theme) => ({
   },
   menuMobileItem: {
     textDecoration: "none",
-    textTransform: "uppercase",
+    // textTransform: "uppercase",
     color: "#212121",
+    display: "block",
+    width: "150px",
   },
 }));
 
@@ -133,6 +148,14 @@ export default function Header() {
                   Biblioteca
                 </MenuItem>
               </NavLink>
+              <a
+                href="https://github.com/MiguelMedeiros/imposto-e-roubo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.menuMobileItem}
+              >
+                <MenuItem>Github</MenuItem>
+              </a>
             </Menu>
             <NavLink
               to="/sobre"
@@ -184,6 +207,18 @@ export default function Header() {
             >
               <Button color="inherit">Biblioteca</Button>
             </NavLink>
+            <Tooltip title="Repositório no Github" aria-label="Github">
+              <a
+                href="https://github.com/MiguelMedeiros/imposto-e-roubo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className={classes.linkGithub}
+                  icon={faGithub}
+                />
+              </a>
+            </Tooltip>
           </Toolbar>
         </Container>
       </AppBar>
