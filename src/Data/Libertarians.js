@@ -15,7 +15,7 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UCSyG9ph5BJSmPRyzc_eGC4g",
     image: "libertarians/ancapsu.jpg",
     name: "Ancap.SU",
-    filter: ["filosofia", "economia", "noticias"],
+    filter: ["filosofia", "economia", "noticias", "portal"],
   },
   {
     link: "https://www.youtube.com/user/paulokogos",
@@ -99,7 +99,7 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UCIU6wWUaWx2ilIiAjeIc6FA",
     image: "libertarians/culturalibertaria.jpg",
     name: "Cultura Libertária",
-    filter: ["filosofia", "entrevista", "podcast"],
+    filter: ["filosofia", "entrevistas", "podcast"],
   },
   {
     link: "https://www.youtube.com/channel/UCtvt8kfIvCH7yT0b5MFTVNA",
@@ -153,7 +153,7 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UCvHBUq2A27OeITnWesAwUJw",
     image: "libertarians/jayjay.jpg",
     name: "Jay Jay Ⓥ",
-    filter: ["musica"],
+    filter: ["música"],
   },
   {
     link: "https://www.youtube.com/channel/UCRJooxeIg3O29IDIcPZPaCg",
@@ -201,13 +201,13 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UC3TSb13siLzhs-UHmIzBoSw",
     image: "libertarians/gabrielmorente.jpg",
     name: "Gabriel Morente",
-    filter: ["musica"],
+    filter: ["música"],
   },
   {
     link: "https://www.youtube.com/channel/UCJtvhFlHTHTZEcToA95wbig",
     image: "libertarians/slammer.jpg",
     name: "Slammer OG",
-    filter: ["musica"],
+    filter: ["música"],
   },
   {
     link: "https://www.youtube.com/channel/UC5rRQGCPscqQY0tdfO_JCxg",
@@ -225,7 +225,7 @@ const Libertarians = [
     link: "https://www.instagram.com/itskordy/",
     image: "libertarians/kordy.jpg",
     name: "It's Kordy",
-    filter: ["musica"],
+    filter: ["música"],
   },
   {
     link: "https://www.youtube.com/channel/UCQZxQh19-PsMWDRChKh1QGw",
@@ -268,6 +268,96 @@ const Libertarians = [
     image: "libertarians/randall.jpg",
     name: "FH Randall",
     filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/user/misesbrasil",
+    image: "libertarians/institutorothbard.jpg",
+    name: "Instituto Rothbard",
+    filter: ["filosofia", "portal"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCb9T91q727Ld4c3lqq3w6Xw",
+    image: "libertarians/institutomisesbrasil.jpg",
+    name: "Instituto Mises Brasil",
+    filter: ["filosofia", "portal"],
+  },
+  {
+    link: "https://www.youtube.com/user/hbeltrao94",
+    image: "libertarians/heliobeltrao.jpg",
+    name: "Helio Beltrão",
+    filter: ["filosofia", "politica", "entrevistas", "noticias"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCzSM3O0WQJVFpiRVwFWdDWg",
+    image: "libertarians/jack.jpg",
+    name: "Jack",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCD65KdRPT7v065JR62rR_qQ",
+    image: "libertarians/universidadelibertaria.jpg",
+    name: "Jack",
+    filter: ["filosofia", "noticias", "entrevistas"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCcp23kLxuSnKJmCY6P8kjcw",
+    image: "libertarians/srbovinogadoso.jpg",
+    name: "Sr. Bovino Gadoso",
+    filter: ["humor"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCLTWPE7XrHEe8m_xAmNbQ-Q",
+    image: "libertarians/visaolibertaria.jpg",
+    name: "Visão Libertária",
+    filter: ["noticias", "politica"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCmhpqvtjSv3dYqBM-IfVxgw",
+    image: "libertarians/cafelibertario.jpg",
+    name: "Café Libertário",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCh0a4T5FX-HjUntwS-kiv5A",
+    image: "libertarians/cubecast.jpg",
+    name: "Cube Cast",
+    filter: ["noticias"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCcFnjgoIMcUhyPz505RsAcA",
+    image: "libertarians/ojeda.jpg",
+    name: "Felipe Ojeda",
+    filter: ["filosofia", "noticias", "politica"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCL44189IdD5L_GhdPPq7bCQ",
+    image: "libertarians/liberdadecultural.jpg",
+    name: "Liberdade Cultural",
+    filter: ["humor"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UC1rz3muzxVGlXJIkJeXvOOw",
+    image: "libertarians/fronteiraaustriaca.jpg",
+    name: "Fronteira Austríaca",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/user/Odinilsonbom",
+    image: "libertarians/odinilson.jpg",
+    name: "Odinilson Bom",
+    filter: ["filosofia", "politica", "noticias"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCZ_YyCaw1ajwZ2BlqDALbvA",
+    image: "libertarians/joaomazetto.jpg",
+    name: "João Mazetto",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCjztKv3bXFXJ8Toc3AwJ89w",
+    image: "libertarians/mairabasilio.jpg",
+    name: "Maira Basílio",
+    filter: ["música"],
   },
 ];
 
