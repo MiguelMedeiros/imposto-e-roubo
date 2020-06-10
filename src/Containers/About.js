@@ -1,17 +1,16 @@
-import React from "react";
-import { Grid, Container, Typography, Box } from "@material-ui/core";
+import {
+  faFacebook,
+  faGithub,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Box, Container, Grid, Typography } from "@material-ui/core";
 import { Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-
+import React from "react";
 import GitHubButton from "react-github-btn";
-import {
-  faYoutube,
-  faTwitter,
-  faGithub,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
 
 const useStyles = makeStyles((theme) => ({
   divider: {
@@ -53,9 +52,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imgAuthor: {
-    width: "225px",
     marginTop: 50,
     borderRadius: "50%",
+    margin: "auto",
+    width: "100%",
+    maxWidth: 225,
+    display: "block",
     [theme.breakpoints.up("sm")]: {
       marginTop: 5,
     },

@@ -193,7 +193,7 @@ export default function Quiz() {
             <img
               src="/img/quiz/lei-4729.jpg"
               alt="Mas e a lei Nº 4729 que está em vigor desde 14/07/1965?"
-              className="image image-zoom"
+              className={classes.image}
             />
           </a>
           <div className={classes.buttonsContainer}>
