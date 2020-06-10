@@ -23,10 +23,23 @@ const Libertarians = [
     name: "Paulo Kogos",
     filter: ["filosofia", "economia", "politica"],
   },
+
   {
     link: "https://www.youtube.com/channel/UCEoSANmneNddweVvUghnfpQ",
     image: "libertarians/bitconheiros.jpg",
     name: "Bitcoinheiros",
+    filter: ["criptomoedas", "podcast", "tecnologia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCLTWPE7XrHEe8m_xAmNbQ-Q",
+    image: "libertarians/visaolibertaria.jpg",
+    name: "Visão Libertária",
+    filter: ["noticias", "politica"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCRzbB2cCyVqJ6y_Ybg_vdaA",
+    image: "libertarians/proofoftalk.jpg",
+    name: "Proof-of-Talk Podcast",
     filter: ["criptomoedas", "podcast", "tecnologia"],
   },
   {
@@ -306,12 +319,6 @@ const Libertarians = [
     filter: ["humor"],
   },
   {
-    link: "https://www.youtube.com/channel/UCLTWPE7XrHEe8m_xAmNbQ-Q",
-    image: "libertarians/visaolibertaria.jpg",
-    name: "Visão Libertária",
-    filter: ["noticias", "politica"],
-  },
-  {
     link: "https://www.youtube.com/channel/UCmhpqvtjSv3dYqBM-IfVxgw",
     image: "libertarians/cafelibertario.jpg",
     name: "Café Libertário",
@@ -393,7 +400,7 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UC25qcfectEPNQQS_BpyA1aA",
     image: "libertarians/tapadamaoinvisivel.jpg",
     name: "Tapa da Mão Invisível",
-    filter: ["filosofia", "politica"],
+    filter: ["filosofia", "politica", "podcast"],
   },
 ];
 
