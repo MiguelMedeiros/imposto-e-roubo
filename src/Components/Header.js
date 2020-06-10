@@ -76,7 +76,6 @@ const useStyles = makeStyles((theme) => ({
   },
   menuMobileItem: {
     textDecoration: "none",
-    // textTransform: "uppercase",
     color: "#212121",
     display: "block",
     width: "150px",

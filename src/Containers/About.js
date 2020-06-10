@@ -4,6 +4,8 @@ import { Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+
+import GitHubButton from "react-github-btn";
 import {
   faYoutube,
   faTwitter,
@@ -35,10 +37,10 @@ const useStyles = makeStyles((theme) => ({
   },
   linksGithub: {
     textAlign: "center",
+    fontFamily: "Roboto !important",
     "& span": {
       display: "inline-block",
-      margin: "auto 0px",
-      padding: "10px 5px",
+      margin: "10px 2px 0px",
     },
   },
   list: {
@@ -62,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function About() {
   const classes = useStyles();
+
   return (
     <Container maxWidth="sm">
       <Grid container justify="center" alignItems="center">
@@ -88,26 +91,22 @@ export default function About() {
             no Github:
           </Typography>
           <div className={classes.linksGithub}>
-            <a
-              class="github-button"
-              href="https://github.com/MiguelMedeiros/imposto-e-roubo"
-              data-icon="octicon-star"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Star MiguelMedeiros/imposto-e-roubo on GitHub"
-            >
-              Star
-            </a>
-            <a
-              class="github-button"
+            <GitHubButton
               href="https://github.com/MiguelMedeiros/imposto-e-roubo/fork"
-              data-icon="octicon-repo-forked"
               data-size="large"
               data-show-count="true"
               aria-label="Fork MiguelMedeiros/imposto-e-roubo on GitHub"
             >
               Fork
-            </a>
+            </GitHubButton>
+            <GitHubButton
+              href="https://github.com/MiguelMedeiros/imposto-e-roubo"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star MiguelMedeiros/imposto-e-roubo on GitHub"
+            >
+              Star
+            </GitHubButton>
           </div>
           <hr className={classes.divider} />
         </Grid>
