@@ -35,7 +35,7 @@ const PurpleSwitch = withStyles({
   switchBase: {
     color: grey[300],
     "&$checked": {
-      color: "#212121",
+      color: "#f3c011",
     },
     "&$checked + $track": {
       backgroundColor: grey[500],
