@@ -2,13 +2,12 @@ import { Container } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Grow from "@material-ui/core/Grow";
 import Paper from "@material-ui/core/Paper";
@@ -90,9 +89,9 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
   const classes = useStyles();
   let location = useLocation();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   // const [anchorEl, setAnchorEl] = useState(null);
-  const anchorRef = React.useRef(null);
+  const anchorRef = useRef(null);
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);

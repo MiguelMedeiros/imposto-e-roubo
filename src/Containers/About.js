@@ -91,20 +91,20 @@ export default function About() {
           </Box>
           <div className={classes.linksGithub}>
             <GitHubButton
-              href="https://github.com/MiguelMedeiros/imposto-e-roubo/fork"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Fork MiguelMedeiros/imposto-e-roubo on GitHub"
-            >
-              Fork
-            </GitHubButton>
-            <GitHubButton
               href="https://github.com/MiguelMedeiros/imposto-e-roubo"
               data-size="large"
               data-show-count="true"
               aria-label="Star MiguelMedeiros/imposto-e-roubo on GitHub"
             >
               Star
+            </GitHubButton>
+            <GitHubButton
+              href="https://github.com/MiguelMedeiros/imposto-e-roubo/fork"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Fork MiguelMedeiros/imposto-e-roubo on GitHub"
+            >
+              Fork
             </GitHubButton>
           </div>
           <hr className={classes.divider} />

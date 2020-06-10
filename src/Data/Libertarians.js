@@ -359,6 +359,42 @@ const Libertarians = [
     name: "Maira Basílio",
     filter: ["música"],
   },
+  {
+    link: "https://www.youtube.com/channel/UCXwOMihopuhWrksS6t4IAYg",
+    image: "libertarians/gabr.jpg",
+    name: "gabr",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCrHYElSw0UhBuVsFsiuXzgQ",
+    image: "libertarians/categoricamente.jpg",
+    name: "Categoricamente",
+    filter: ["politica", "noticias"],
+  },
+  {
+    link: "https://www.youtube.com/user/Guerrelhominas",
+    image: "libertarians/costa.jpg",
+    name: "Costa, o libertário",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UCadJk6cs0-CCkbyitnKYq6A",
+    image: "libertarians/jaum.jpg",
+    name: "Jaum !!",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UC6wxyZmdzqO8HTI_TY7GBmQ",
+    image: "libertarians/scheffel.jpg",
+    name: "Scheffel",
+    filter: ["filosofia"],
+  },
+  {
+    link: "https://www.youtube.com/channel/UC25qcfectEPNQQS_BpyA1aA",
+    image: "libertarians/tapadamaoinvisivel.jpg",
+    name: "Tapa da Mão Invisível",
+    filter: ["filosofia", "politica"],
+  },
 ];
 
 export default Libertarians;
