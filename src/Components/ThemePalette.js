@@ -43,6 +43,14 @@ let theme = createMuiTheme({
         fontSize: 35,
         marginBottom: 10,
       },
+      h3: {
+        color: "#f9f9f9",
+        fontWeight: "bold",
+        textShadow: "-5px 5px 0px #2a2a2a",
+        fontFamily: "Saira Stencil One",
+        fontSize: 25,
+        marginBottom: 10,
+      },
     },
   },
 });

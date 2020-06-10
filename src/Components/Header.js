@@ -10,6 +10,11 @@ import Typography from "@material-ui/core/Typography";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import Grow from "@material-ui/core/Grow";
+import Paper from "@material-ui/core/Paper";
+import Popper from "@material-ui/core/Popper";
+import ClickAwayListener from "@material-ui/core/ClickAwayListener";
+import MenuList from "@material-ui/core/MenuList";
 
 import { Tooltip } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -85,15 +90,36 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
   const classes = useStyles();
   let location = useLocation();
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [open, setOpen] = React.useState(false);
+  // const [anchorEl, setAnchorEl] = useState(null);
+  const anchorRef = React.useRef(null);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handleToggle = () => {
+    setOpen((prevOpen) => !prevOpen);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
+  const handleClose = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+
+    setOpen(false);
   };
+  function handleListKeyDown(event) {
+    if (event.key === "Tab") {
+      event.preventDefault();
+      setOpen(false);
+    }
+  }
+
+  const prevOpen = React.useRef(open);
+  React.useEffect(() => {
+    if (prevOpen.current === true && open === false) {
+      anchorRef.current.focus();
+    }
+
+    prevOpen.current = open;
+  }, [open]);
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
@@ -106,56 +132,103 @@ export default function Header() {
             </Typography>
 
             <IconButton
+              ref={anchorRef}
               aria-label="more"
               aria-controls="long-menu"
               aria-haspopup="true"
-              onClick={handleClick}
+              onClick={handleToggle}
               className={classes.menuMobile}
             >
               <MoreVertIcon />
             </IconButton>
-            <Menu
-              id="simple-menu"
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
+            <Popper
+              open={open}
+              anchorEl={anchorRef.current}
+              role={undefined}
+              transition
+              disablePortal
             >
-              <NavLink to="/sobre" className={classes.menuMobileItem}>
-                <MenuItem selected={location.pathname === "/sobre"}>
-                  Sobre
-                </MenuItem>
-              </NavLink>
-              <NavLink to="/quiz" className={classes.menuMobileItem}>
-                <MenuItem selected={location.pathname === "/quiz"}>
-                  Quiz
-                </MenuItem>
-              </NavLink>
+              {({ TransitionProps, placement }) => (
+                <Grow
+                  {...TransitionProps}
+                  style={{
+                    transformOrigin:
+                      placement === "bottom" ? "center top" : "center bottom",
+                  }}
+                >
+                  <Paper>
+                    <ClickAwayListener onClickAway={handleClose}>
+                      <MenuList
+                        autoFocusItem={open}
+                        id="menu-list-grow"
+                        onKeyDown={handleListKeyDown}
+                      >
+                        <NavLink
+                          to="/sobre"
+                          onClick={handleToggle}
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem selected={location.pathname === "/sobre"}>
+                            Sobre
+                          </MenuItem>
+                        </NavLink>
+                        <NavLink
+                          to="/quiz"
+                          onClick={handleToggle}
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem selected={location.pathname === "/quiz"}>
+                            Quiz
+                          </MenuItem>
+                        </NavLink>
 
-              <NavLink to="/noticias" className={classes.menuMobileItem}>
-                <MenuItem selected={location.pathname === "/noticias"}>
-                  Notícias
-                </MenuItem>
-              </NavLink>
-              <NavLink to="/libertarios" className={classes.menuMobileItem}>
-                <MenuItem selected={location.pathname === "/libertarios"}>
-                  Libertários
-                </MenuItem>
-              </NavLink>
-              <NavLink to="/biblioteca" className={classes.menuMobileItem}>
-                <MenuItem selected={location.pathname === "/biblioteca"}>
-                  Biblioteca
-                </MenuItem>
-              </NavLink>
-              <a
-                href="https://github.com/MiguelMedeiros/imposto-e-roubo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.menuMobileItem}
-              >
-                <MenuItem>Github</MenuItem>
-              </a>
-            </Menu>
+                        <NavLink
+                          to="/noticias"
+                          onClick={handleToggle}
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem
+                            selected={location.pathname === "/noticias"}
+                          >
+                            Notícias
+                          </MenuItem>
+                        </NavLink>
+                        <NavLink
+                          to="/libertarios"
+                          onClick={handleToggle}
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem
+                            selected={location.pathname === "/libertarios"}
+                          >
+                            Libertários
+                          </MenuItem>
+                        </NavLink>
+                        <NavLink
+                          to="/biblioteca"
+                          onClick={handleToggle}
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem
+                            selected={location.pathname === "/biblioteca"}
+                          >
+                            Biblioteca
+                          </MenuItem>
+                        </NavLink>
+                        <a
+                          href="https://github.com/MiguelMedeiros/imposto-e-roubo"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem>Github</MenuItem>
+                        </a>
+                      </MenuList>
+                    </ClickAwayListener>
+                  </Paper>
+                </Grow>
+              )}
+            </Popper>
             <NavLink
               to="/sobre"
               className={

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Container, Typography } from "@material-ui/core";
+import { Grid, Container, Typography, Box } from "@material-ui/core";
 import { Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -82,14 +82,13 @@ export default function About() {
             livros. Fora a integração com o site Visão Libertária para ter
             notícias sempre quentinhas sob a ótica libertária.
           </Typography>
-          <hr className={classes.divider} />
-          <Typography variant="h2" style={{ fontSize: 30 }}>
-            Contribua com código
-          </Typography>
-          <Typography paragraph>
-            Se você quiser ajudar na programação, segue os links do repositório
-            no Github:
-          </Typography>
+          <Box style={{ marginTop: 30 }}>
+            <Typography variant="h3">Contribua com código</Typography>
+            <Typography paragraph>
+              Se você quiser ajudar na programação, segue os links do
+              repositório no Github:
+            </Typography>
+          </Box>
           <div className={classes.linksGithub}>
             <GitHubButton
               href="https://github.com/MiguelMedeiros/imposto-e-roubo/fork"

@@ -33,7 +33,9 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   iframeContainer: {
-    height: "57vh",
+    height: "400px",
+    maxHeight: 720,
+    display: "flex",
   },
   youtubeEmbed: {
     maxWidth: "100%",
@@ -165,10 +167,14 @@ export default function Home() {
         </div>
       </Modal>
       <Container maxWidth="lg">
-        <Grid container spacing={2} style={{ padding: "10px 30px 30px" }}>
+        <Grid container spacing={2} style={{ padding: "10px 0px 30px" }}>
           <Grid item xs={12} sm={12} md={8}>
             <NavLink to="/quiz">
-              <img src="./img/banners/banner-imposto-roubo.png" alt="Quiz" />
+              <img
+                src="./img/banners/banner-imposto-roubo.png"
+                alt="Quiz"
+                style={{ marginTop: 2 }}
+              />
             </NavLink>
           </Grid>
           <Grid item xs={12} sm={12} md={4}>
@@ -182,6 +188,7 @@ export default function Home() {
                   <img
                     src="./img/banners/banner-bitcoinpricemap2.png"
                     alt="Bitcoin Price Map"
+                    style={{ marginTop: 2 }}
                   />
                 </a>
               </Grid>
@@ -194,6 +201,7 @@ export default function Home() {
                   <img
                     src="./img/banners/banner-bitcoinhodler.png"
                     alt="Bitcoin Price Map"
+                    style={{ marginTop: 2 }}
                   />
                 </a>
               </Grid>
@@ -206,13 +214,14 @@ export default function Home() {
                   <img
                     src="./img/banners/banner-visaolibertaria2.png"
                     alt="Extensão Visão Libertária"
+                    style={{ marginTop: 1 }}
                   />
                 </a>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>
+        <Grid item xs={12} style={{ padding: "10px 0px 30px" }}>
           <NavLink to={"/biblioteca"} className={classes.titleLink}>
             <Typography variant="h1">Biblioteca</Typography>
           </NavLink>
@@ -222,8 +231,9 @@ export default function Home() {
                 <Grid
                   item
                   xs={12}
-                  sm={6}
+                  sm={3}
                   md={3}
+                  lg={3}
                   key={index}
                   style={{ padding: "10px 5px" }}
                   onClick={() => {
@@ -243,7 +253,7 @@ export default function Home() {
             })}
           </Grid>
         </Grid>
-        <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>
+        <Grid item xs={12} style={{ padding: "10px 0px 30px" }}>
           <NavLink to={"/libertarios"} className={classes.titleLink}>
             <Typography variant="h1">Libertários</Typography>
           </NavLink>
@@ -263,7 +273,7 @@ export default function Home() {
             })}
           </Grid>
         </Grid>
-        <Grid item xs={12} style={{ padding: "10px 30px 30px" }}>
+        <Grid item xs={12} style={{ padding: "10px 0px 30px" }}>
           <NavLink to={"/noticias"} className={classes.titleLink}>
             <Typography variant="h1">Notícias</Typography>
           </NavLink>

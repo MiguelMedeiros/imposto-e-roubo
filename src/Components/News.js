@@ -26,7 +26,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   iframeContainer: {
-    height: "57vh",
+    height: "400px",
+    maxHeight: 720,
+    display: "flex",
   },
   youtubeEmbed: {
     maxWidth: "100%",
