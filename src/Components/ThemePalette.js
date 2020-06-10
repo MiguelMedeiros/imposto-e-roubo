@@ -33,6 +33,7 @@ let theme = createMuiTheme({
         fontSize: 45,
         marginBottom: 10,
         paddingLeft: 5,
+        display: "inline-block",
       },
       h2: {
         color: "#f9f9f9",
