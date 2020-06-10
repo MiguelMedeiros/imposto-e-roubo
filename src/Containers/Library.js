@@ -6,6 +6,10 @@ import Modal from "@material-ui/core/Modal";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Switch from "@material-ui/core/Switch";
 import React, { useState } from "react";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import Book from "./../Components/Book";
 import libertarians from "./../Data/Books";
@@ -62,6 +66,13 @@ const useStyles = makeStyles((theme) => ({
       outline: "none !important",
     },
   },
+  panelRoot: {
+    background: "#212121",
+    color: "#616161",
+  },
+  panelIcon: {
+    color: "#616161",
+  },
 }));
 
 const PurpleSwitch = withStyles({
@@ -82,6 +93,11 @@ export default function LibertariansContainer(props) {
   const classes = useStyles();
   const [modalVideo, setModalVideo] = useState(null);
   const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChangeFilter = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
   function getSelectedFilters() {
     const params = new URLSearchParams(props.location.search);
@@ -181,26 +197,44 @@ export default function LibertariansContainer(props) {
             </div>
           </Modal>
           <Grid item xs={12} className={classes.filters}>
-            <Grid container>
-              <FormGroup row>
-                {libertariansFilters.map((f) => (
-                  <Grid item xs={12} sm={4} md={3} lg={2} key={f}>
-                    <FormControlLabel
-                      className={classes.filterOption}
-                      control={
-                        <PurpleSwitch
-                          checked={selectedFilters.includes(f)}
-                          onChange={handleChange(f)}
-                          value={f}
-                          color="secondary"
-                        />
-                      }
-                      label={f}
-                    />
-                  </Grid>
-                ))}
-              </FormGroup>
-            </Grid>
+            <ExpansionPanel
+              expanded={expanded === "panel"}
+              onChange={handleChangeFilter("panel")}
+              color="secondary"
+              classes={{
+                root: classes.panelRoot,
+              }}
+            >
+              <ExpansionPanelSummary
+                expandIcon={
+                  <ExpandMoreIcon classes={{ root: classes.panelIcon }} />
+                }
+                aria-controls="panel1bh-content"
+                id="panel1bh-header"
+              >
+                <Typography>Pesquisar</Typography>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails>
+                <FormGroup row>
+                  {libertariansFilters.map((f) => (
+                    <Grid item xs={12} sm={4} md={3} lg={2} key={f}>
+                      <FormControlLabel
+                        className={classes.filterOption}
+                        control={
+                          <PurpleSwitch
+                            checked={selectedFilters.includes(f)}
+                            onChange={handleChange(f)}
+                            value={f}
+                            color="secondary"
+                          />
+                        }
+                        label={f}
+                      />
+                    </Grid>
+                  ))}
+                </FormGroup>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
           </Grid>
           {libertarians
             .filter(
