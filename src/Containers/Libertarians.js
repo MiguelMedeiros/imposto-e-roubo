@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
   },
   panelRoot: {
-    background: "#f3c0110d",
+    background: "#212121",
     color: "#616161",
   },
   panelIcon: {
