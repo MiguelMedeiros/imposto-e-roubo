@@ -39,7 +39,7 @@ const Libertarians = [
   {
     link: "https://www.youtube.com/channel/UCRzbB2cCyVqJ6y_Ybg_vdaA",
     image: "libertarians/proofoftalk.jpg",
-    name: "Proof-of-Talk Podcast",
+    name: "Proof of Talk",
     filter: ["criptomoedas", "podcast", "tecnologia"],
   },
   {

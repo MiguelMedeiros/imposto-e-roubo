@@ -1,15 +1,15 @@
 import { Button, Container, Grid, Typography } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormGroup from "@material-ui/core/FormGroup";
 import Modal from "@material-ui/core/Modal";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Switch from "@material-ui/core/Switch";
-import React, { useState } from "react";
-import ExpansionPanel from "@material-ui/core/ExpansionPanel";
-import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
-import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import React, { useState } from "react";
 
 import Book from "./../Components/Book";
 import libertarians from "./../Data/Books";
@@ -141,7 +141,7 @@ export default function LibertariansContainer(props) {
       <Container maxWidth="lg">
         <Grid container spacing={0} direction="row">
           <Grid item xs={12}>
-            <Typography variant="h1">Bibliteca</Typography>
+            <Typography variant="h1">Biblioteca</Typography>
           </Grid>
           <Modal
             open={open}
