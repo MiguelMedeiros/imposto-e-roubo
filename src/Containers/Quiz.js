@@ -66,7 +66,7 @@ export default function Quiz() {
               color="secondary"
               size="large"
             >
-              Clique aqui para descubrir
+              Clique aqui para descobrir
             </Button>
           </div>
         </div>
