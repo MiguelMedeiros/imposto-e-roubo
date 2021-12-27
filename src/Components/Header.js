@@ -163,15 +163,6 @@ export default function Header() {
                         onKeyDown={handleListKeyDown}
                       >
                         <NavLink
-                          to="/sobre"
-                          onClick={handleToggle}
-                          className={classes.menuMobileItem}
-                        >
-                          <MenuItem selected={location.pathname === "/sobre"}>
-                            Sobre
-                          </MenuItem>
-                        </NavLink>
-                        <NavLink
                           to="/quiz"
                           onClick={handleToggle}
                           className={classes.menuMobileItem}
@@ -180,7 +171,6 @@ export default function Header() {
                             Quiz
                           </MenuItem>
                         </NavLink>
-
                         <NavLink
                           to="/noticias"
                           onClick={handleToggle}
@@ -190,6 +180,17 @@ export default function Header() {
                             selected={location.pathname === "/noticias"}
                           >
                             Notícias
+                          </MenuItem>
+                        </NavLink>
+                        <NavLink
+                          to="/biblioteca"
+                          onClick={handleToggle}
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem
+                            selected={location.pathname === "/biblioteca"}
+                          >
+                            Biblioteca
                           </MenuItem>
                         </NavLink>
                         <NavLink
@@ -204,14 +205,12 @@ export default function Header() {
                           </MenuItem>
                         </NavLink>
                         <NavLink
-                          to="/biblioteca"
+                          to="/sobre"
                           onClick={handleToggle}
                           className={classes.menuMobileItem}
                         >
-                          <MenuItem
-                            selected={location.pathname === "/biblioteca"}
-                          >
-                            Biblioteca
+                          <MenuItem selected={location.pathname === "/sobre"}>
+                            Sobre
                           </MenuItem>
                         </NavLink>
                         <a
@@ -228,16 +227,6 @@ export default function Header() {
                 </Grow>
               )}
             </Popper>
-            <NavLink
-              to="/sobre"
-              className={
-                location.pathname === "/sobre"
-                  ? `${classes.activeButton}`
-                  : `${classes.menuButton}`
-              }
-            >
-              <Button color="inherit">Sobre</Button>
-            </NavLink>
             <NavLink
               to="/quiz"
               className={
@@ -259,6 +248,16 @@ export default function Header() {
               <Button color="inherit">Notícias</Button>
             </NavLink>
             <NavLink
+              to="/biblioteca"
+              className={
+                location.pathname === "/biblioteca"
+                  ? `${classes.activeButton}`
+                  : `${classes.menuButton}`
+              }
+            >
+              <Button color="inherit">Biblioteca</Button>
+            </NavLink>
+            <NavLink
               to="/libertarios"
               className={
                 location.pathname === "/libertarios"
@@ -269,14 +268,14 @@ export default function Header() {
               <Button color="inherit">Libertários</Button>
             </NavLink>
             <NavLink
-              to="/biblioteca"
+              to="/sobre"
               className={
-                location.pathname === "/biblioteca"
+                location.pathname === "/sobre"
                   ? `${classes.activeButton}`
                   : `${classes.menuButton}`
               }
             >
-              <Button color="inherit">Biblioteca</Button>
+              <Button color="inherit">Sobre</Button>
             </NavLink>
             <Tooltip title="Repositório no Github" aria-label="Github">
               <a
