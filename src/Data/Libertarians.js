@@ -79,12 +79,6 @@ const Libertarians = [
     filter: ["filosofia", "economia", "politica"],
   },
   {
-    link: "https://www.youtube.com/channel/UC549xKR8JvVXLNHvzV_AZsw",
-    image: "libertarians/avelino.jpg",
-    name: "Avelino Morganti",
-    filter: ["criptomoedas"],
-  },
-  {
     link: "https://www.youtube.com/channel/UC4z5OsOcltedh3iZKYJ2UcA",
     image: "libertarians/pessimista.jpg",
     name: "O Pessimista",
@@ -235,12 +229,6 @@ const Libertarians = [
     filter: ["filosofia", "politica"],
   },
   {
-    link: "https://www.instagram.com/itskordy/",
-    image: "libertarians/kordy.jpg",
-    name: "It's Kordy",
-    filter: ["música"],
-  },
-  {
     link: "https://www.youtube.com/channel/UCQZxQh19-PsMWDRChKh1QGw",
     image: "libertarians/zanfa.jpg",
     name: "Zanfa",
@@ -293,12 +281,6 @@ const Libertarians = [
     image: "libertarians/institutomisesbrasil.jpg",
     name: "Instituto Mises Brasil",
     filter: ["filosofia", "portal"],
-  },
-  {
-    link: "https://www.youtube.com/user/hbeltrao94",
-    image: "libertarians/heliobeltrao.jpg",
-    name: "Helio Beltrão",
-    filter: ["filosofia", "politica", "entrevistas", "noticias"],
   },
   {
     link: "https://www.youtube.com/channel/UCzSM3O0WQJVFpiRVwFWdDWg",
