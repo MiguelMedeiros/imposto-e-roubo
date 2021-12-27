@@ -227,7 +227,7 @@ export default function Quiz() {
           </div>
 
           <div className={classes.buttonsContainer}>
-            <NavLink to="/visao-libertaria" style={{ textDecoration: "none" }}>
+            <NavLink to="/noticias" style={{ textDecoration: "none" }}>
               <Button
                 variant="contained"
                 className={classes.button}
