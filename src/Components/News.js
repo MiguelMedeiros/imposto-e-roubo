@@ -7,7 +7,8 @@ import Typography from "@material-ui/core/Typography";
 import Skeleton from "@material-ui/lab/Skeleton";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
-import VisaoLibertariaApi from "visao-libertaria-api";
+import axios from "axios";
+
 
 import youtubeUrlParser from "./../Helpers/youtube";
 
@@ -101,21 +102,18 @@ export default function News(props) {
       setLoading(true);
     }
     setLoadingMore(true);
-    const newVideos = await VisaoLibertariaApi.videoList(
-      12,
-      ini,
-      "https://cors-everywhere.herokuapp.com/"
-    );
-    if (newVideos.Videos.length > 0) {
-      let allVideos = videos;
-      allVideos.push(...newVideos.Videos);
-      setVideos(allVideos);
-      setIni(ini + 12);
-      if (start) {
-        setLoading(false);
-      }
-      setLoadingMore(false);
-    }
+    await axios.get(`https://cors-everywhere.herokuapp.com/https://visaolibertaria.com/api/Video/List?ini=${ini}&max=12`)
+      .then((res) => {
+        const newVideos = res.data.videos;
+        const allVideos = videos;
+        allVideos.push(...newVideos);
+        setVideos(allVideos);
+        setIni(ini + 12);
+        if (start) {
+          setLoading(false);
+        }
+        setLoadingMore(false);
+      });
   }
 
   useEffect(() => {
@@ -159,13 +157,13 @@ export default function News(props) {
                       display: "block",
                     }}
                   >
-                    {modalVideo.Authors.Date}
+                    {/* {modalVideo.authors.Date} */}
                   </Typography>
                   <div className={classes.iframeContainer}>
                     <iframe
-                      title={modalVideo.Title}
+                      title={modalVideo.title}
                       src={`https://www.youtube.com/embed/${youtubeUrlParser(
-                        modalVideo.YoutubeLink
+                        modalVideo.youtubeLink
                       )}?autoplay=1`}
                       height="100%"
                       width="100%"
@@ -178,7 +176,7 @@ export default function News(props) {
               )}
             </div>
           </Modal>
-          {(loading ? Array.from(new Array(12)) : videos).map((item, index) => (
+          {(loading && videos.length === 0 ? Array.from(new Array(6)) : videos).map((item, index) => (
             <Grid key={index} item xs={12} sm={6} md={4} lg={3} xl={3}>
               <Box
                 marginLeft={1}
@@ -192,7 +190,7 @@ export default function News(props) {
                     style={{
                       backgroundImage:
                         "url('http://img.youtube.com/vi/" +
-                        youtubeUrlParser(item.YoutubeLink) +
+                        youtubeUrlParser(item.youtubeLink) +
                         "/hqdefault.jpg')",
                     }}
                     onClick={() => {
@@ -217,15 +215,15 @@ export default function News(props) {
                       cursor: "pointer",
                     }}
                   >
-                    <Typography variant="caption" style={{ color: "#ccc" }}>
+                    {/* <Typography variant="caption" style={{ color: "#ccc" }}>
                       {item.Authors.Date}
-                    </Typography>
+                    </Typography> */}
                     <Typography
                       gutterBottom
                       variant="body1"
                       style={{ fontWeight: "bold", color: "#f9f9f9" }}
                     >
-                      {item.Title}
+                      {item.title}
                     </Typography>
                   </Box>
                 ) : (
