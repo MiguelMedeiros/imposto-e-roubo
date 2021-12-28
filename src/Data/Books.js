@@ -215,6 +215,46 @@ const Books = [
     audio: "m7YJgj57Css",
     filter: ["economia", "tecnologia", "soberania"],
   },
+  {
+    link: "https://amzn.to/3HfvTh6",
+    image: "books/the-fiat-standard.jpg",
+    bookTitle: "The Fiat Standard",
+    bookAuthor: "Saifedean Ammous",
+    audio: "UxrV09BjGko",
+    filter: ["economia", "bitcoin", "soberania"],
+  },
+  {
+    link: "https://amzn.to/3JsyExE",
+    image: "books/the-blocksize-war.jpg",
+    bookTitle: "The Blocksize War",
+    bookAuthor: "Jonathan Bier",
+    audio: "uUJxYuH6Km4",
+    filter: ["bitcoin"],
+  },
+  {
+    link: "https://amzn.to/3FABcYb",
+    image: "books/economia-em-uma-unica-licao.jpg",
+    bookTitle: "Economia em uma única lição",
+    bookAuthor: "Henry Hazlitt",
+    audio: "uAJalIUiu6U",
+    filter: ["economia"],
+  },  
+  {
+    link: "https://amzn.to/3mDBki9",
+    image: "books/21-lessons.jpg",
+    bookTitle: "21 Lições",
+    bookAuthor: "Gigi",
+    audio: "XV2bxmA1EXA",
+    filter: ["economia", "bitcoin", "filosofia"],
+  },  
+  {
+    link: "https://amzn.to/3quEm9s",
+    image: "books/bitcoin-red-pill.jpg",
+    bookTitle: "Bitcoin Red Pill",
+    bookAuthor: "Renato Amoedo e Alan Schramm",
+    audio: "mEoJkjh9n6M",
+    filter: ["economia", "bitcoin", "filosofia", "soberania"],
+  },
 ];
 
 export default Books;
