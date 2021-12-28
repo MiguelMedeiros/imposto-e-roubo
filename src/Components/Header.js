@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     color: theme.palette.secondary.main,
     textDecoration: "none",
-    fontSize: 20,
+    fontSize: 19,
     fontFamily: "Saira Stencil One",
   },
   menuMobile: {
