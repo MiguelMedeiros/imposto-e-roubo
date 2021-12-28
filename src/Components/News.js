@@ -9,7 +9,6 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-
 import youtubeUrlParser from "./../Helpers/youtube";
 
 const useStyles = makeStyles((theme) => ({
@@ -101,7 +100,7 @@ export default function News(props) {
     if (start) {
       setLoading(true);
     }
-    setLoadingMore(true);
+    setLoadingMore(true);      
     await axios.get(`https://cors-everywhere.herokuapp.com/https://visaolibertaria.com/api/Video/List?ini=${ini}&max=12`)
       .then((res) => {
         const newVideos = res.data.videos;
@@ -166,7 +165,7 @@ export default function News(props) {
               )}
             </div>
           </Modal>
-          {(loading && videos.length === 0 ? Array.from(new Array(8)) : videos).map((item, index) => (
+          {(loading && videos.length === 0 ? Array.from(new Array(12)) : videos).map((item, index) => (
             <Grid key={index} item xs={12} sm={6} md={4} lg={3} xl={3}>
               <Box
                 marginLeft={1}

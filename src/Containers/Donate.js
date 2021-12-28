@@ -1,7 +1,6 @@
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import GitHubButton from "react-github-btn";
 import QRCode from 'qrcode.react';
 
 const useStyles = makeStyles((theme) => ({
