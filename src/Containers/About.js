@@ -114,108 +114,6 @@ export default function About() {
               Fork
             </GitHubButton>
           </div>
-          <hr className={classes.divider} />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Typography variant="h2">O Criador</Typography>
-          <Typography paragraph>
-            Meu nome é Miguel Medeiros, sou desenvolvedor web e libertário
-            anarcocapitalista.
-          </Typography>
-          <Typography paragraph>
-            Se quiser entrar em contato dá uma olhada nos links abaixo:
-          </Typography>
-        </Grid>
-        <Grid item xs={12} sm={6} className={classes.authorLinks}>
-          <img
-            src="./img/libertarians/miguelmedeiros.jpg"
-            alt="Miguel Medeiros"
-            className={classes.imgAuthor}
-          />
-        </Grid>
-        <Grid item xs={12} sm={12}>
-          <ul className={classes.list}>
-            <li>
-              <Tooltip title="@_miguelmedeiros" aria-label="@_miguelmedeiros">
-                <a
-                  href="https://www.miguelmedeiros.com.br"
-                  target="_blank"
-                  className={classes.link}
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={classes.icon}
-                    style={{ color: "#f3c011" }}
-                    icon={faLink}
-                  />
-                </a>
-              </Tooltip>
-            </li>
-            <li>
-              <Tooltip title="Youtube" aria-label="Youtube">
-                <a
-                  href="https://www.youtube.com/channel/UCyF0x2hyYIQxw8Km2O3ltGg"
-                  target="_blank"
-                  className={classes.link}
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={classes.icon}
-                    style={{ color: "#f00" }}
-                    icon={faYoutube}
-                  />
-                </a>
-              </Tooltip>
-            </li>
-            <li>
-              <Tooltip title="Twitter" aria-label="Twitter">
-                <a
-                  href="https://twitter.com/_miguelmedeiros"
-                  target="_blank"
-                  className={classes.link}
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={classes.icon}
-                    style={{ color: "#1da1f2" }}
-                    icon={faTwitter}
-                  />
-                </a>
-              </Tooltip>
-            </li>
-            <li>
-              <Tooltip title="Github" aria-label="Github">
-                <a
-                  href="https://github.com/MiguelMedeiros"
-                  target="_blank"
-                  className={classes.link}
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={classes.icon}
-                    style={{ color: "#f0f0f0" }}
-                    icon={faGithub}
-                  />
-                </a>
-              </Tooltip>
-            </li>
-            <li>
-              <Tooltip title="Facebook" aria-label="Facebook">
-                <a
-                  href="https://www.facebook.com/miguelmedeirosweb/"
-                  target="_blank"
-                  className={classes.link}
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={classes.icon}
-                    style={{ color: "#4267b2" }}
-                    icon={faFacebook}
-                  />
-                </a>
-              </Tooltip>
-            </li>
-          </ul>
         </Grid>
 
         <Grid
@@ -232,14 +130,7 @@ export default function About() {
           <Typography paragraph>
             Doe alguns Satoshis para ajudar a manter o projeto online:
           </Typography>
-          <div
-            style={{
-              diplay: "inline-block",
-              textAlign: "center",
-              margin: "50px auto 20px",
-              background: "#fff",
-            }}
-          >
+          <div>
             <div
             style={{
               background: "#fff",
