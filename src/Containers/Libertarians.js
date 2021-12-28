@@ -138,7 +138,13 @@ export default function LibertariansContainer(props) {
             )
             .map((person, index) => {
               return (
-                <Grid key={index} item xs={6} sm={4} md={2}>
+                <Grid 
+                  key={index}
+                  item
+                  xs={6}
+                  sm={3}
+                  md={2}
+                >
                   <Libertarian
                     key={index}
                     link={person.link}

@@ -42,6 +42,12 @@ const Libertarians = [
     filter: ["bitcoin", "tecnologia", "economia"],
   },
   {
+    link: "https://www.youtube.com/c/Sobrevivencialismo",
+    image: "libertarians/sobrevivencialismo.jpg",
+    name: "Sobrevivencialismo",
+    filter: ["sobrevivência"],
+  },
+  {
     link: "https://www.youtube.com/channel/UC25qcfectEPNQQS_BpyA1aA",
     image: "libertarians/tapadamaoinvisivel.jpg",
     name: "Tapa da Mão Invisível",
