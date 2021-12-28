@@ -1,9 +1,9 @@
 import red from "@material-ui/core/colors/red";
-import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import React from "react";
+import { createTheme } from '@material-ui/core/styles'
 
-let theme = createMuiTheme({
+let theme = createTheme({
   palette: {
     primary: {
       main: "#202020",
