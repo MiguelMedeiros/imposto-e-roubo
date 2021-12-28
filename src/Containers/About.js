@@ -11,8 +11,13 @@ import { Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import GitHubButton from "react-github-btn";
+import QRCode from 'qrcode.react';
 
 const useStyles = makeStyles((theme) => ({
+  avatarContainer: {
+    fontFamily: "Roboto !important",
+    fontWeight: 500,
+  },
   divider: {
     display: "block",
     height: 1,
@@ -70,7 +75,7 @@ export default function About() {
   return (
     <Container maxWidth="sm">
       <Grid container justify="center" alignItems="center">
-        <Grid item className="avatar-container" xs={12}>
+        <Grid item className={classes.avatarContainer} xs={12}>
           <Typography variant="h1">O Projeto</Typography>
           <Typography paragraph>
             Provavelmente você já ouvir essa pergunta: imposto é roubo?
@@ -215,7 +220,7 @@ export default function About() {
 
         <Grid
           item
-          className="avatar-container"
+          className={classes.avatarContainer}
           xs={12}
           style={{
             borderRadius: 8,
@@ -229,19 +234,23 @@ export default function About() {
           </Typography>
           <div
             style={{
-              diplay: "block",
+              diplay: "inline-block",
               textAlign: "center",
               margin: "50px auto 20px",
+              background: "#fff",
             }}
           >
-            <img
-              src="/img/donation.png"
-              alt="Doe Bitcoins"
-              style={{
-                borderRadius: 8,
-              }}
-            />
-            <p>18kXMmrDtgfeQgVmwfmygTaYLyQuVS4chK</p>
+            <div
+            style={{
+              background: "#fff",
+              margin: "0 auto",
+              display: "inline-block",
+              padding: '10px 10px 5px 10px',
+              borderRadius: 10
+            }}>
+              <QRCode value="bc1qvyw5kfx0uhu7g5qeahzna8tl9c5jsuemjumxzj" />
+            </div>
+            <p>bc1qvyw5kfx0uhu7g5qeahzna8tl9c5jsuemjumxzj</p>
           </div>
         </Grid>
       </Grid>
