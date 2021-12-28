@@ -17,7 +17,7 @@ import MenuList from "@material-ui/core/MenuList";
 
 import { Tooltip } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -214,6 +214,14 @@ export default function Header() {
                           </MenuItem>
                         </NavLink>
                         <a
+                          href="https://discord.bitcoinheiros.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem>Discord</MenuItem>
+                        </a>
+                        <a
                           href="https://github.com/MiguelMedeiros/imposto-e-roubo"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -277,6 +285,18 @@ export default function Header() {
             >
               <Button color="inherit">Sobre</Button>
             </NavLink>
+            <Tooltip title="The Bitcoin Discord" aria-label="Discord">
+              <a
+                href="https://github.com/MiguelMedeiros/imposto-e-roubo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className={classes.linkGithub}
+                  icon={faDiscord}
+                />
+              </a>
+            </Tooltip>
             <Tooltip title="Repositório no Github" aria-label="Github">
               <a
                 href="https://github.com/MiguelMedeiros/imposto-e-roubo"

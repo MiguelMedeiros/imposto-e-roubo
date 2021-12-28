@@ -257,6 +257,16 @@ export default function Quiz() {
                 Biblioteca
               </Button>
             </NavLink>
+            <a href="https://discord.bitcoinheiros.com" style={{ textDecoration: "none" }}>
+              <Button
+                variant="contained"
+                className={classes.button}
+                color="secondary"
+                size="large"
+              >
+                The Bitcoin Discord
+              </Button>
+            </a>
             <Button
               variant="contained"
               className={classes.button}
