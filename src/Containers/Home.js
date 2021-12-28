@@ -148,6 +148,7 @@ export default function Home() {
                 href={modalBook.link}
                 style={{ margin: "5px auto 15px" }}
                 color="secondary"
+                target="_blank"
               >
                 Comprar Livro
               </Button>

@@ -176,6 +176,7 @@ export default function LibertariansContainer(props) {
                     href={modalVideo.link}
                     style={{ margin: "5px auto 15px" }}
                     color="secondary"
+                    target="_blank"
                   >
                     Comprar Livro
                   </Button>
