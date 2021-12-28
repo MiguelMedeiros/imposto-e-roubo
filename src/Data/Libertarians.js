@@ -87,13 +87,13 @@ const Libertarians = [
     link: "https://www.youtube.com/c/KoreacomK",
     image: "libertarians/koreacomk.jpg",
     name: "KoreacomK",
-    filter: ["bitcoin"],
+    filter: ["bitcoin", "economia"],
   },
   {
     link: "https://www.youtube.com/c/21Milh%C3%B5esPodcast",
     image: "libertarians/21milhoes.jpg",
     name: "21 Milhões Podcast",
-    filter: ["podcast", "bitcoin"],
+    filter: ["podcast", "bitcoin", "economia"],
   },
   {
     link: "https://www.youtube.com/c/LdeLiberdade",
@@ -108,6 +108,12 @@ const Libertarians = [
     filter: ["bitcoin", "economia", "podcast"],
   },
   {
+    link: "https://www.youtube.com/channel/UCxrhyTbGqXWy5zr8HAeDPuQ",
+    image: "libertarians/hans-investe.jpg",
+    name: "Hans Investe",
+    filter: ["bitcoin", "economia", "podcast"],
+  },
+  {
     link: "https://www.youtube.com/channel/UCcgAa7wJ1OwRzd-TGFwIxPA",
     image: "libertarians/fhoer.jpg",
     name: "Fhoer",
@@ -117,7 +123,7 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UC4z5OsOcltedh3iZKYJ2UcA",
     image: "libertarians/pessimista.jpg",
     name: "O Pessimista",
-    filter: ["filosofia", "economia"],
+    filter: ["filosofia"],
   },
   {
     link: "https://www.youtube.com/user/adrianogianturco",

@@ -7,7 +7,7 @@ export default function NewsContainer() {
   return (
     <Container maxWidth="lg">
       <Grid container spacing={0} direction="row">
-        <div style={{ margin: "auto ", width: "100%", textAlign: "center" }}>
+        {/* <div style={{ margin: "auto ", width: "100%", textAlign: "center" }}>
           <a
             href="https://chrome.google.com/webstore/detail/vis%C3%A3o-libert%C3%A1ria/jnafjgekhpiipmhihkmoboggpclkdijl?hl=pt-BR"
             target="_blank"
@@ -19,7 +19,7 @@ export default function NewsContainer() {
               alt="Extensão Visão Libertária"
             />
           </a>
-        </div>
+        </div> */}
         <Grid item xs={12}>
           <Typography variant="h1">Notícias</Typography>
         </Grid>
