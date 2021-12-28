@@ -65,7 +65,7 @@ export default function About() {
 
   return (
     <Container maxWidth="sm">
-      <Grid container justify="center" alignItems="center">
+      <Grid container justifyContent="center" alignItems="center">
         <Grid item className={classes.avatarContainer} xs={12}>
           <Typography variant="h1">O Projeto</Typography>
           <Typography paragraph>

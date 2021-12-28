@@ -65,7 +65,7 @@ export default function About() {
 
   return (
     <Container maxWidth="sm">
-      <Grid container justify="center" alignItems="center">
+      <Grid container justifyContent="center" alignItems="center">
         <Grid
           item
           className={classes.avatarContainer}
@@ -78,7 +78,7 @@ export default function About() {
         >
           <Typography variant="h2">Faça uma doação!</Typography>
           <Typography paragraph>
-            Doe alguns satoshis para ajudar a manter o projeto online:
+            Doe alguns Satoshis para ajudar a manter o projeto online:
           </Typography>
           <div>
             <div
