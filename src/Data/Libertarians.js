@@ -96,12 +96,6 @@ const Libertarians = [
     filter: ["filosofia", "economia"],
   },
   {
-    link: "https://www.youtube.com/user/ideiasradicais",
-    image: "libertarians/ideiasradicais.jpg",
-    name: "Ideias Radicais",
-    filter: ["filosofia", "economia", "politica"],
-  },
-  {
     link: "https://www.youtube.com/channel/UCIU6wWUaWx2ilIiAjeIc6FA",
     image: "libertarians/culturalibertaria.jpg",
     name: "Cultura Libertária",
@@ -382,6 +376,30 @@ const Libertarians = [
     image: "libertarians/tapadamaoinvisivel.jpg",
     name: "Tapa da Mão Invisível",
     filter: ["filosofia", "politica", "podcast"],
+  },
+  {
+    link: "https://www.youtube.com/c/MarcoBatalha",
+    image: "libertarians/marco-batalha.jpg",
+    name: "Marco Batalha",
+    filter: ["filosofia", "politica", "biologia", "noticias", "bitcoin"],
+  },
+  {
+    link: "https://www.youtube.com/c/21Milh%C3%B5esPodcast",
+    image: "libertarians/21milhoes.jpg",
+    name: "21 Milhões Podcast",
+    filter: ["podcast", "bitcoin"],
+  },
+  {
+    link: "https://www.youtube.com/c/KoreacomK",
+    image: "libertarians/koreacomk.jpg",
+    name: "KoreacomK",
+    filter: ["bitcoin"],
+  },
+  {
+    link: "https://www.youtube.com/c/LdeLiberdade",
+    image: "libertarians/l-de-liberdade.jpg",
+    name: "L de Liberdade",
+    filter: ["filosofia", "politica", "noticias"],
   },
 ];
 
