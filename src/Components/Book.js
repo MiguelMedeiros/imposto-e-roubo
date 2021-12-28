@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Liberterian({ link, image, name, filter, author }) {
+function Book({ link, image, name, filter, author }) {
   const classes = useStyles();
   return (
     <Box className={classes.avatar}>
@@ -56,8 +56,8 @@ function Liberterian({ link, image, name, filter, author }) {
   );
 }
 
-Liberterian.propTypes = {
+Book.propTypes = {
   loading: PropTypes.bool,
 };
 
-export default Liberterian;
+export default Book;

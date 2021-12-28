@@ -1,8 +1,6 @@
 import { Button, Container, Grid, Typography } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
-import ExpansionPanel from "@material-ui/core/ExpansionPanel";
-import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
-import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import { Accordion, AccordionDetails, AccordionSummary } from '@material-ui/core'
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormGroup from "@material-ui/core/FormGroup";
 import Modal from "@material-ui/core/Modal";
@@ -197,7 +195,7 @@ export default function LibertariansContainer(props) {
             </div>
           </Modal>
           <Grid item xs={12} className={classes.filters}>
-            <ExpansionPanel
+            <Accordion
               expanded={expanded === "panel"}
               onChange={handleChangeFilter("panel")}
               color="secondary"
@@ -205,7 +203,7 @@ export default function LibertariansContainer(props) {
                 root: classes.panelRoot,
               }}
             >
-              <ExpansionPanelSummary
+              <AccordionSummary
                 expandIcon={
                   <ExpandMoreIcon classes={{ root: classes.panelIcon }} />
                 }
@@ -213,8 +211,8 @@ export default function LibertariansContainer(props) {
                 id="panel1bh-header"
               >
                 <Typography>Pesquisar</Typography>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
+              </AccordionSummary>
+              <AccordionDetails>
                 <FormGroup row>
                   {libertariansFilters.map((f) => (
                     <Grid item xs={12} sm={4} md={3} lg={2} key={f}>
@@ -233,8 +231,8 @@ export default function LibertariansContainer(props) {
                     </Grid>
                   ))}
                 </FormGroup>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
+              </AccordionDetails>
+            </Accordion>
           </Grid>
           {libertarians
             .filter(
