@@ -3,13 +3,13 @@ const Libertarians = [
     link: "https://www.youtube.com/user/DanielFragaBR",
     image: "libertarians/danielfraga.jpg",
     name: "Daniel Fraga",
-    filter: ["filosofia", "economia", "politica", "criptomoedas"],
+    filter: ["filosofia", "economia", "politica", "bitcoin"],
   },
   {
     link: "https://www.youtube.com/user/miguelmedeiros",
     image: "libertarians/miguelmedeiros.jpg",
     name: "Miguel Medeiros",
-    filter: ["tecnologia", "criptomoedas"],
+    filter: ["tecnologia", "bitcoin"],
   },
   {
     link: "https://www.youtube.com/channel/UCSyG9ph5BJSmPRyzc_eGC4g",
@@ -23,12 +23,11 @@ const Libertarians = [
     name: "Paulo Kogos",
     filter: ["filosofia", "economia", "politica"],
   },
-
   {
     link: "https://www.youtube.com/channel/UCEoSANmneNddweVvUghnfpQ",
     image: "libertarians/bitconheiros.jpg",
     name: "Bitcoinheiros",
-    filter: ["criptomoedas", "podcast", "tecnologia"],
+    filter: ["bitcoin", "podcast", "tecnologia"],
   },
   {
     link: "https://www.youtube.com/channel/UCLTWPE7XrHEe8m_xAmNbQ-Q",
@@ -40,7 +39,7 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UCRzbB2cCyVqJ6y_Ybg_vdaA",
     image: "libertarians/proofoftalk.jpg",
     name: "Proof of Talk",
-    filter: ["criptomoedas", "podcast", "tecnologia"],
+    filter: ["bitcoin", "podcast", "tecnologia"],
   },
   {
     link: "https://www.youtube.com/channel/UCHiPlljsU3rFJvNegG6BEPw",
@@ -58,13 +57,13 @@ const Libertarians = [
     link: "https://www.youtube.com/channel/UCLJkh3QjHsLtK0LZFd28oGg",
     image: "libertarians/fernandoulrich.jpg",
     name: "Fernando Ulrich",
-    filter: ["economia", "criptomoedas"],
+    filter: ["economia", "bitcoin"],
   },
   {
     link: "https://www.youtube.com/channel/UC4H35F5f2c5cyR-pbZlt12Q",
     image: "libertarians/tiagosalem.jpg",
     name: "Tiago Salem",
-    filter: ["tecnologia", "criptomoedas"],
+    filter: ["tecnologia", "bitcoin"],
   },
   {
     link: "https://www.youtube.com/user/CanalTal",
@@ -130,7 +129,7 @@ const Libertarians = [
     link: "https://www.youtube.com/user/alcancetime",
     image: "libertarians/tayrone.jpg",
     name: "Tayrone",
-    filter: ["criptomoedas", "tecnologia"],
+    filter: ["bitcoin", "tecnologia"],
   },
   {
     link: "https://www.youtube.com/channel/UCLGdIYRBOHcbgRfqk9Lw7xg",
@@ -178,13 +177,13 @@ const Libertarians = [
     link: "https://www.youtube.com/c/brunogarcia99",
     image: "libertarians/brunogarcia.jpg",
     name: "Bruno Garcia",
-    filter: ["criptomoedas", "tecnologia"],
+    filter: ["bitcoin", "tecnologia"],
   },
   {
     link: "https://www.youtube.com/channel/UC1OOmmuYyUimzsxcwpf7mHA",
     image: "libertarians/criptotec.jpg",
     name: "Cripto Tec",
-    filter: ["criptomoedas", "tecnologia"],
+    filter: ["bitcoin", "tecnologia"],
   },
   {
     link: "https://www.youtube.com/channel/UCbON19PsKqlrYHSr2qjxHcQ",
