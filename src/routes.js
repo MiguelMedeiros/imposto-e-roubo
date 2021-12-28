@@ -7,6 +7,7 @@ import Quiz from "./Containers/Quiz";
 import About from "./Containers/About";
 import Libertarians from "./Containers/Libertarians";
 import Library from "./Containers/Library";
+import Donate from "./Containers/Donate";
 
 function Routes() {
   return (
@@ -17,6 +18,7 @@ function Routes() {
       <Route path="/sobre" component={About} exact />
       <Route path="/libertarios" component={Libertarians} exact />
       <Route path="/biblioteca" component={Library} exact />
+      <Route path="/apoie" component={Donate} exact />
     </Switch>
   );
 }

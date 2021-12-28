@@ -65,11 +65,8 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     color: theme.palette.secondary.main,
     textDecoration: "none",
-    fontSize: 22,
+    fontSize: 20,
     fontFamily: "Saira Stencil One",
-    [theme.breakpoints.up(600)]: {
-      fontSize: 26,
-    },
   },
   menuMobile: {
     display: "inline",
@@ -213,6 +210,15 @@ export default function Header() {
                             Sobre
                           </MenuItem>
                         </NavLink>
+                        <NavLink
+                          to="/apoie"
+                          onClick={handleToggle}
+                          className={classes.menuMobileItem}
+                        >
+                          <MenuItem selected={location.pathname === "/apoie"}>
+                            Apoie
+                          </MenuItem>
+                        </NavLink>
                         <a
                           href="https://discord.bitcoinheiros.com"
                           target="_blank"
@@ -284,6 +290,16 @@ export default function Header() {
               }
             >
               <Button color="inherit">Sobre</Button>
+            </NavLink>
+            <NavLink
+              to="/apoie"
+              className={
+                location.pathname === "/apoie"
+                  ? `${classes.activeButton}`
+                  : `${classes.menuButton}`
+              }
+            >
+              <Button color="inherit">apoie</Button>
             </NavLink>
             <Tooltip title="The Bitcoin Discord" aria-label="Discord">
               <a

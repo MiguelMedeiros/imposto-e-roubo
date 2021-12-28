@@ -66,47 +66,6 @@ export default function About() {
   return (
     <Container maxWidth="sm">
       <Grid container justify="center" alignItems="center">
-        <Grid item className={classes.avatarContainer} xs={12}>
-          <Typography variant="h1">O Projeto</Typography>
-          <Typography paragraph>
-            Provavelmente você já ouvir essa pergunta: imposto é roubo?
-          </Typography>
-          <Typography paragraph>
-            Para te ajudar com a resposta, desenvolvi esse site como forma de
-            conscientização de todos nós - pagadores de impostos.
-          </Typography>
-          <Typography paragraph>
-            Para isso fiz um quiz, uma coletânea de canais libertários e de
-            livros. Fora a integração com o site Visão Libertária para ter
-            notícias sempre quentinhas sob a ótica libertária.
-          </Typography>
-          <Box style={{ marginTop: 30 }}>
-            <Typography variant="h3">Contribua com código</Typography>
-            <Typography paragraph>
-              Se você quiser ajudar na programação, segue os links do
-              repositório no Github:
-            </Typography>
-          </Box>
-          <div className={classes.linksGithub}>
-            <GitHubButton
-              href="https://github.com/MiguelMedeiros/imposto-e-roubo"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Star MiguelMedeiros/imposto-e-roubo on GitHub"
-            >
-              Star
-            </GitHubButton>
-            <GitHubButton
-              href="https://github.com/MiguelMedeiros/imposto-e-roubo/fork"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Fork MiguelMedeiros/imposto-e-roubo on GitHub"
-            >
-              Fork
-            </GitHubButton>
-          </div>
-        </Grid>
-
         <Grid
           item
           className={classes.avatarContainer}
@@ -114,9 +73,9 @@ export default function About() {
           style={{
             borderRadius: 8,
             textAlign: "center",
+            marginTop: 20
           }}
         >
-          <hr className={classes.divider} />
           <Typography variant="h2">Faça uma doação!</Typography>
           <Typography paragraph>
             Doe alguns satoshis para ajudar a manter o projeto online:
