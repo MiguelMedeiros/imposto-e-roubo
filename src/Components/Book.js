@@ -5,7 +5,7 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    textAlign: "center",
+    textAlign: "left",
     padding: "20px 0 0",
     fontFamily: "Roboto",
     fontWeight: "bold",
@@ -30,17 +30,17 @@ const useStyles = makeStyles((theme) => ({
   name: {
     maxWidth: 320,
     width: "100%",
-    fontSize: 18,
+    fontSize: 10,
     textTransform: "uppercase",
     margin: "20px auto 5px",
   },
   filters: {
-    fontSize: 11,
+    fontSize: 9,
     color: "#CCC",
     marginBottom: 40,
   },
   author: {
-    fontSize: 14,
+    fontSize: 12,
   },
 }));
 

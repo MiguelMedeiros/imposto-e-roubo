@@ -247,9 +247,9 @@ export default function LibertariansContainer(props) {
                 <Grid
                   key={index}
                   item
-                  xs={12}
+                  xs={6}
                   sm={4}
-                  md={3}
+                  md={2}
                   style={{ padding: "10px 5px" }}
                   onClick={() => {
                     handleOpen(book);

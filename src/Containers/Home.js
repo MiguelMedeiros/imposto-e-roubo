@@ -97,7 +97,7 @@ export default function Home() {
 
   useEffect(() => {
     let shuffleBooksTemp = _.shuffle(books);
-    setShuffleBooks(_.slice(shuffleBooksTemp, 0, 4));
+    setShuffleBooks(_.slice(shuffleBooksTemp, 0, 6));
 
     let shuffleLibertariansTemp = _.shuffle(libertarians);
     setShuffleLibertarians(_.slice(shuffleLibertariansTemp, 0, 6));
@@ -230,10 +230,10 @@ export default function Home() {
               return (
                 <Grid
                   item
-                  xs={12}
-                  sm={3}
-                  md={3}
-                  lg={3}
+                  xs={6}
+                  sm={4}
+                  md={2}
+                  lg={2}
                   key={index}
                   style={{ padding: "10px 5px" }}
                   onClick={() => {
