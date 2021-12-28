@@ -36,6 +36,12 @@ const Libertarians = [
     filter: ["tecnologia", "bitcoin"],
   },
   {
+    link: "https://www.youtube.com/channel/UCSv_erzIMsN8-hKrCfggxxw",
+    image: "libertarians/na-toca-do-coelho.jpg",
+    name: "Na Toca do Coelho",
+    filter: ["bitcoin", "tecnologia", "economia"],
+  },
+  {
     link: "https://www.youtube.com/channel/UC25qcfectEPNQQS_BpyA1aA",
     image: "libertarians/tapadamaoinvisivel.jpg",
     name: "Tapa da Mão Invisível",
