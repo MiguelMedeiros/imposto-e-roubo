@@ -147,17 +147,7 @@ export default function News(props) {
                       fontWeight: "bold",
                     }}
                   >
-                    {modalVideo.Title}
-                  </Typography>
-                  <Typography
-                    variant="caption"
-                    style={{
-                      color: "#ccc",
-                      marginBottom: 15,
-                      display: "block",
-                    }}
-                  >
-                    {/* {modalVideo.authors.Date} */}
+                    {modalVideo.title}
                   </Typography>
                   <div className={classes.iframeContainer}>
                     <iframe
@@ -176,7 +166,7 @@ export default function News(props) {
               )}
             </div>
           </Modal>
-          {(loading && videos.length === 0 ? Array.from(new Array(6)) : videos).map((item, index) => (
+          {(loading && videos.length === 0 ? Array.from(new Array(8)) : videos).map((item, index) => (
             <Grid key={index} item xs={12} sm={6} md={4} lg={3} xl={3}>
               <Box
                 marginLeft={1}
@@ -215,9 +205,6 @@ export default function News(props) {
                       cursor: "pointer",
                     }}
                   >
-                    {/* <Typography variant="caption" style={{ color: "#ccc" }}>
-                      {item.Authors.Date}
-                    </Typography> */}
                     <Typography
                       gutterBottom
                       variant="body1"
