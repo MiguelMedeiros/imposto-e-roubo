@@ -32,12 +32,12 @@ const Books = [
     filter: ["economia", "bitcoin", "soberania"],
   },
   {
-    link: "https://amzn.to/3JsyExE",
-    image: "books/the-blocksize-war.jpg",
-    bookTitle: "The Blocksize War",
-    bookAuthor: "Jonathan Bier",
-    audio: "uUJxYuH6Km4",
-    filter: ["bitcoin"],
+    link: "https://amzn.to/32xmRgz",
+    image: "books/ponerologia.jpg",
+    bookTitle: "Ponerologia: Psicopatas no Poder",
+    bookAuthor: "Andrew Lobaczewski",
+    audio: "4FMbRFpjNfo",
+    filter: ["filosofia", "politica", "soberania"],
   },
   {
     link: "https://amzn.to/3mDBki9",
@@ -54,6 +54,14 @@ const Books = [
     bookAuthor: "Renato Amoedo e Alan Schramm",
     audio: "mEoJkjh9n6M",
     filter: ["economia", "bitcoin", "filosofia", "soberania"],
+  },
+  {
+    link: "https://amzn.to/3JsyExE",
+    image: "books/the-blocksize-war.jpg",
+    bookTitle: "The Blocksize War",
+    bookAuthor: "Jonathan Bier",
+    audio: "uUJxYuH6Km4",
+    filter: ["bitcoin"],
   },
   {
     link: "https://amzn.to/3FBjTGk",
