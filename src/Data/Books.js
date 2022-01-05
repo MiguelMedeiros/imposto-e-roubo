@@ -37,7 +37,7 @@ const Books = [
     bookTitle: "Ponerologia: Psicopatas no Poder",
     bookAuthor: "Andrew Lobaczewski",
     audio: "4FMbRFpjNfo",
-    filter: ["filosofia", "politica", "soberania"],
+    filter: ["filosofia", "política", "soberania"],
   },
   {
     link: "https://amzn.to/3mDBki9",
@@ -193,7 +193,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/3EBIjOB",
-    image: "books/desempregoepoliticamonetaria.jpg",
+    image: "books/desempregoepolíticamonetaria.jpg",
     bookTitle: "Desemprego e Política Monetária",
     bookAuthor: "F.A. Hayek",
     audio: "ktaKZ4WinJk",
@@ -233,7 +233,7 @@ const Books = [
   },
   {
     link: "https://amzn.to/3FznnsT",
-    image: "books/acienciapolitica.jpg",
+    image: "books/acienciapolítica.jpg",
     bookTitle: "A Ciência da Política",
     bookAuthor: "Adriano Gianturco",
     audio: "VKvdbhyFqg0",
